@@ -321,6 +321,14 @@ figcaption {
   margin-bottom: 10px;
 }
 
+.post-newsletter-headline {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #000;
+  margin-bottom: 10px;
+}
+
 .post-newsletter-copy {
   font-size: 0.85rem;
   line-height: 1.6;
