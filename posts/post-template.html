@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Post Title] | Journal | The WhiteRock Group</title>
+  <meta name="description" content="[Post meta description — 150 characters]">
+  <link rel="canonical" href="https://thewhiterockgroup.co/posts/[slug]">
+  <meta property="og:title" content="[Post Title] | The WhiteRock Group">
+  <meta property="og:description" content="[Post meta description]">
+  <meta property="og:url" content="https://thewhiterockgroup.co/posts/[slug]">
+  <meta property="og:type" content="article">
+  <meta property="og:image" content="https://thewhiterockgroup.co/assets/favicon.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "[Post Title]",
+    "description": "[Post meta description]",
+    "author": { "@type": "Organization", "name": "The WhiteRock Group" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "The WhiteRock Group",
+      "logo": { "@type": "ImageObject", "url": "https://thewhiterockgroup.co/assets/logo-dark.png" }
+    },
+    "datePublished": "[YYYY-MM-DD]",
+    "url": "https://thewhiterockgroup.co/posts/[slug]"
+  }
+  </script>
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/journal.css">
+  <link rel="stylesheet" href="../css/post.css">
+</head>
+<body class="journal-page post-page">
+
+  <!-- HEADER -->
+  <header class="header-light-bg">
+    <div class="page-inner header-inner">
+      <a href="../index.html" class="nav-logo" aria-label="The WhiteRock Group">
+        <img src="../assets/logo-dark.png" alt="The WhiteRock Group" style="height:22px;width:auto;display:block;">
+      </a>
+      <button id="menu-btn" class="menu-btn menu-btn--light" aria-controls="slide-nav" aria-haspopup="true" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+  <nav id="slide-nav" class="slide-nav" aria-label="Main navigation">
+    <a href="../index.html" style="display:block;margin-bottom:48px;">
+      <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:18px;width:auto;">
+    </a>
+    <ul>
+      <li><a href="../services.html">Services</a></li>
+      <li><a href="../index.html">Work</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../journal.html">Journal</a></li>
+      <li><a href="../partners.html">Partners</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="slide-nav-footer">
+      <a href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         POST HEADER — full width
+    ═══════════════════════════════════════════ -->
+    <section class="post-header">
+      <div class="post-header-inner">
+
+        <div class="post-header-top-row">
+          <a href="../journal.html" class="post-back">← Journal</a>
+          <button class="post-subscribe-btn" onclick="document.getElementById('post-newsletter').scrollIntoView({behavior:'smooth'})">Subscribe</button>
+        </div>
+
+        <div class="post-meta-row">
+          <span class="journal-tag">[Category]</span>
+          <span class="post-dot">·</span>
+          <span class="post-date">[Month DD, YYYY]</span>
+          <span class="post-dot">·</span>
+          <span class="post-read-time">[X] min read</span>
+        </div>
+
+        <h1 class="post-headline">[Post Title That Can Run Across Two Lines If Needed]</h1>
+
+        <p class="post-intro">[One or two sentence intro that draws the reader in. Specific and punchy.]</p>
+
+        <div class="post-actions-row">
+          <!-- Listen -->
+          <button class="post-action-btn" id="listen-btn" aria-label="Listen to article">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Listen
+          </button>
+
+          <!-- Share -->
+          <button class="post-action-btn" id="share-btn" aria-label="Share article">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+            Share
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         HERO IMAGE — full width
+    ═══════════════════════════════════════════ -->
+    <div class="post-hero">
+      <div class="post-hero-placeholder journal-img-placeholder--1">
+        <!-- Replace with: <img src="../assets/[image].jpg" alt="[description]"> -->
+      </div>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════
+         3-COLUMN CONTENT AREA
+         Left: jump nav + share  |  Center: article  |  Right: newsletter
+    ═══════════════════════════════════════════ -->
+    <div class="post-content-grid">
+
+      <!-- LEFT — jump links -->
+      <aside class="post-toc" id="post-toc">
+        <nav aria-label="Article sections">
+          <ul class="post-toc-list" id="toc-list">
+            <!-- populated by JS -->
+          </ul>
+        </nav>
+        <button class="post-share-side" id="share-side-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+          Share
+        </button>
+      </aside>
+
+
+      <!-- CENTER — article body -->
+      <article class="post-body" id="post-body">
+
+        <p>[Opening paragraph. Set the scene. Why does this topic matter right now, to this reader, at this moment? Be direct — avoid warm-up sentences. The first paragraph should earn the second.]</p>
+
+        <p>[Second paragraph. Start building the argument. Introduce the core idea or tension this post will resolve.]</p>
+
+        <h2 id="section-1">[First Section Heading]</h2>
+
+        <p>[Body paragraph. One idea, clearly stated. Use specific examples rather than generalities — name a real scenario, a common mistake, or a concrete outcome.]</p>
+
+        <p>[Supporting paragraph. Ground the idea in reality with a stat, observation, or client example (anonymised if needed).]</p>
+
+        <blockquote class="post-pullquote">
+          [The most compelling sentence in this section — pull it out so readers scanning the page stop here.]
+        </blockquote>
+
+        <p>[Continue the argument. Address nuance or the counterargument. What do most people get wrong about this?]</p>
+
+
+        <h2 id="section-2">[Second Section Heading]</h2>
+
+        <p>[Next section. Each H2 is a distinct idea or step. Keep sections tight — 3–5 paragraphs max.]</p>
+
+        <p>[This is a good place for a list if you have enumerable points:]</p>
+
+        <ul class="post-list">
+          <li>[First point — one sentence, active voice]</li>
+          <li>[Second point]</li>
+          <li>[Third point]</li>
+          <li>[Fourth point]</li>
+        </ul>
+
+        <!-- Inline image — use when a visual adds meaning -->
+        <figure class="post-figure">
+          <div class="post-figure-placeholder journal-img-placeholder--5">
+            <!-- Replace with: <img src="../assets/[image].jpg" alt="[description]"> -->
+          </div>
+          <figcaption>[Optional caption.]</figcaption>
+        </figure>
+
+
+        <h2 id="section-3">[Third Section Heading]</h2>
+
+        <p>[Continue the argument. What does this mean in practice? Be prescriptive without being preachy — give the reader something actionable.]</p>
+
+        <p>[Second to last paragraph. What should change after reading this? Give one clear directive.]</p>
+
+        <p>[Closing paragraph. End strong. Circle back to the opening if possible. Leave the reader with one clear takeaway or a question to sit with.]</p>
+
+
+        <!-- TAGS -->
+        <div class="post-tags">
+          <a href="../journal.html" class="post-tag">[Tag One]</a>
+          <a href="../journal.html" class="post-tag">[Tag Two]</a>
+          <a href="../journal.html" class="post-tag">[Tag Three]</a>
+        </div>
+
+      </article>
+
+
+      <!-- RIGHT — newsletter signup -->
+      <aside class="post-newsletter-aside" id="post-newsletter">
+        <div class="post-newsletter-box">
+          <p class="post-newsletter-label">Signals for Founders</p>
+          <p class="post-newsletter-copy">Perspectives on revenue, growth, and building businesses that endure. No fluff.</p>
+          <div class="post-newsletter-form">
+            <input id="post-email-input" type="email" placeholder="Your email" autocomplete="email" class="post-newsletter-input">
+            <button id="post-email-btn" class="post-newsletter-btn">
+              <svg width="16" height="16" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </aside>
+
+    </div><!-- /.post-content-grid -->
+
+
+    <!-- ═══════════════════════════════════════════
+         RELATED POSTS
+    ═══════════════════════════════════════════ -->
+    <section class="post-related">
+      <div class="post-related-inner">
+        <p class="post-related-label">More from the Journal</p>
+        <div class="journal-grid">
+
+          <article class="journal-card">
+            <a href="post-template.html" class="journal-card-img-link">
+              <div class="journal-card-img journal-img-placeholder journal-img-placeholder--2"></div>
+            </a>
+            <span class="journal-tag">Article</span>
+            <h3 class="journal-card-headline">[Related Post Title One]</h3>
+            <p class="journal-card-desc">[Short description of the related post.]</p>
+            <a href="post-template.html" class="journal-read-more">Read more</a>
+          </article>
+
+          <article class="journal-card">
+            <a href="post-template.html" class="journal-card-img-link">
+              <div class="journal-card-img journal-img-placeholder journal-img-placeholder--7"></div>
+            </a>
+            <span class="journal-tag">Insights</span>
+            <h3 class="journal-card-headline">[Related Post Title Two]</h3>
+            <p class="journal-card-desc">[Short description of the related post.]</p>
+            <a href="post-template.html" class="journal-read-more">Read more</a>
+          </article>
+
+          <article class="journal-card">
+            <a href="post-template.html" class="journal-card-img-link">
+              <div class="journal-card-img journal-img-placeholder journal-img-placeholder--9"></div>
+            </a>
+            <span class="journal-tag">Signals</span>
+            <h3 class="journal-card-headline">[Related Post Title Three]</h3>
+            <p class="journal-card-desc">[Short description of the related post.]</p>
+            <a href="post-template.html" class="journal-read-more">Read more</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="page-inner">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-contact-label">Contact Us</p>
+          <p class="footer-tagline">Let's peer over the horizon together</p>
+          <a class="footer-email" href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
+        </div>
+        <div class="footer-nav-cols">
+          <div>
+            <p>WR.G</p>
+            <ul>
+              <li><a href="../services.html">Services</a></li>
+              <li><a href="../index.html">Work</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>More</p>
+            <ul>
+              <li><a href="../journal.html">Journal</a></li>
+              <li><a href="../partners.html">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Follow</p>
+            <ul>
+              <li><a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/thewhiterockgroup/" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://open.spotify.com/user/nya1o2vhaddlb4vvhm9b5kr8k" target="_blank" rel="noopener">Spotify</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-mailing">
+          <form id="mailing-form" novalidate>
+            <label for="footer-email-input">Signals for Founders</label>
+            <div class="footer-email-wrap">
+              <input id="footer-email-input" type="email" name="email" class="footer-input" placeholder="Your email" required autocomplete="email">
+              <button type="submit" class="footer-submit" aria-label="Join mailing list">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">The WhiteRock Group is a proudly inclusive organisation and an active firm in the local community and support movements toward equality.</p>
+        <div></div>
+        <div style="text-align:left;">
+          <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:16px;width:auto;opacity:0.5;margin-bottom:12px;">
+          <p class="footer-legal">© The WhiteRock Group 2026<br>All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // ── TABLE OF CONTENTS — auto-generate from H2s ────────────
+    const headings = document.querySelectorAll('.post-body h2');
+    const tocList  = document.getElementById('toc-list');
+    let activeIndex = 0;
+
+    headings.forEach((h, i) => {
+      const li = document.createElement('li');
+      const a  = document.createElement('a');
+      a.href        = '#' + h.id;
+      a.textContent = h.textContent;
+      a.className   = 'toc-link' + (i === 0 ? ' toc-link--active' : '');
+      a.addEventListener('click', (e) => {
+        e.preventDefault();
+        h.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+
+    // Highlight active section on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          document.querySelectorAll('.toc-link').forEach(link => {
+            link.classList.toggle('toc-link--active', link.getAttribute('href') === '#' + id);
+          });
+        }
+      });
+    }, { rootMargin: '-20% 0px -70% 0px' });
+
+    headings.forEach(h => observer.observe(h));
+
+
+    // ── LISTEN — Web Speech API ───────────────────────────────
+    const listenBtn = document.getElementById('listen-btn');
+    let speaking = false;
+    let utterance;
+
+    listenBtn.addEventListener('click', () => {
+      if (!window.speechSynthesis) return;
+
+      if (speaking) {
+        window.speechSynthesis.cancel();
+        speaking = false;
+        listenBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg> Listen`;
+        return;
+      }
+
+      const text = document.getElementById('post-body').innerText;
+      utterance = new SpeechSynthesisUtterance(text);
+      utterance.rate = 0.95;
+      utterance.onend = () => {
+        speaking = false;
+        listenBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg> Listen`;
+      };
+      window.speechSynthesis.speak(utterance);
+      speaking = true;
+      listenBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg> Stop`;
+    });
+
+
+    // ── SHARE ─────────────────────────────────────────────────
+    function shareArticle() {
+      if (navigator.share) {
+        navigator.share({ title: document.title, url: window.location.href });
+      } else {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          alert('Link copied to clipboard');
+        });
+      }
+    }
+    document.getElementById('share-btn').addEventListener('click', shareArticle);
+    document.getElementById('share-side-btn').addEventListener('click', shareArticle);
+
+
+    // ── NEWSLETTER ────────────────────────────────────────────
+    const postBtn   = document.getElementById('post-email-btn');
+    const postInput = document.getElementById('post-email-input');
+    if (postBtn && postInput) {
+      postBtn.addEventListener('click', () => {
+        if (!postInput.value) return;
+        fetch('https://api.hsforms.com/submissions/v3/integration/submit/244284755/361c4ca5-f338-414b-960d-9c602bba56ce', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fields: [{ name: 'email', value: postInput.value }],
+            context: { pageUri: window.location.href, pageName: document.title }
+          })
+        }).finally(() => {
+          postBtn.innerHTML = `<svg width="16" height="16" viewBox="0 0 18 18" fill="none"><path d="M3 9l4 4 8-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+          postInput.value = '';
+        });
+      });
+    }
+  </script>
+
+</body>
+</html>
