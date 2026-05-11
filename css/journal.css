@@ -159,10 +159,10 @@
 
 .journal-featured-headline {
   font-size: clamp(1.3rem, 2.2vw, 1.9rem);
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.3;
   color: #000;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.08em;
   margin-bottom: 14px;
   max-width: 780px;
 }
@@ -222,10 +222,10 @@
 
 .journal-card-headline {
   font-size: 0.95rem;
-  font-weight: 700;
+  font-weight: 900;
   line-height: 1.45;
   color: #000;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.07em;
   margin-bottom: 10px;
 }
 
