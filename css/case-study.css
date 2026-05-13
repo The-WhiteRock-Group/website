@@ -1,6 +1,283 @@
 /* ============================================================
    CASE STUDY — case-study.css
-   Matches Josephmark DOOR page layout exactly
+   ============================================================ */
+
+/* ============================================================
+   NEW PORTFOLIO LAYOUT (cs2-*)
+   Sections: hero / info / image-split / story / showcase / journal
+   ============================================================ */
+
+/* ── SECTION 1: Hero ─────────────────────────────────────── */
+.cs2-hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.cs2-hero-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a;
+}
+
+.cs2-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+
+.cs2-hero-inner {
+  position: relative;
+  z-index: 2;
+}
+
+.cs2-hero-title {
+  font-size: clamp(2.5rem, 7vw, 7rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.08;
+  color: #fff;
+}
+
+/* ── SECTION 2: Info (white) ─────────────────────────────── */
+.cs2-info {
+  background: #fff;
+  color: #000;
+  padding: clamp(56px, 8vw, 112px) 0;
+}
+
+.cs2-info-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(40px, 6vw, 80px);
+}
+
+@media (min-width: 768px) {
+  .cs2-info-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.cs2-client-name {
+  font-size: clamp(1.6rem, 3vw, 2.75rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  color: #000;
+  margin-bottom: clamp(32px, 5vw, 56px);
+}
+
+.cs2-scope-label {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.cs2-scope-list {
+  list-style: none;
+}
+
+.cs2-scope-list li {
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.9;
+  color: #000;
+}
+
+.cs2-info-right p {
+  font-size: clamp(0.9rem, 1.2vw, 1.0625rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.75;
+  color: #222;
+  margin-bottom: 1.4em;
+}
+
+.cs2-info-right p:last-of-type {
+  margin-bottom: 1.75em;
+}
+
+.cs2-visit-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: clamp(0.875rem, 1vw, 1rem);
+  font-weight: 300;
+  color: #000;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.cs2-visit-link:hover { opacity: 0.5; }
+
+/* ── SECTION 3: Two-column image split ───────────────────── */
+.cs2-image-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.cs2-image-split-col {
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .cs2-image-split {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs2-image-split-col img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cs2-img-placeholder {
+  position: absolute;
+  inset: 0;
+}
+
+/* ── SECTIONS 4 & 6: Story (off-white) ───────────────────── */
+.cs2-story {
+  background: var(--off-white);
+  color: #000;
+  padding: clamp(64px, 8vw, 112px) 0;
+}
+
+.cs2-story-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(32px, 5vw, 64px);
+}
+
+@media (min-width: 768px) {
+  .cs2-story-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.cs2-story-h2 {
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  font-weight: 300;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: #000;
+}
+
+.cs2-story-intro {
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+  color: #000;
+  margin-bottom: 1.5em;
+}
+
+.cs2-story-right p {
+  font-size: clamp(0.875rem, 1.1vw, 1rem);
+  font-weight: 300;
+  letter-spacing: -0.01em;
+  line-height: 1.75;
+  color: #333;
+  margin-bottom: 1.25em;
+}
+
+.cs2-story-right p:last-child { margin-bottom: 0; }
+
+/* ── SECTION 5: Dark showcase ────────────────────────────── */
+.cs2-showcase {
+  background: #111;
+  padding: clamp(48px, 6vw, 96px) 0;
+  overflow: hidden;
+}
+
+.cs2-showcase-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 0 var(--px);
+  max-width: var(--max-w);
+  margin: 0 auto;
+  position: relative;
+}
+
+.cs2-showcase-img {
+  overflow: hidden;
+  border-radius: 8px;
+  background: #222;
+}
+
+.cs2-showcase-img--left {
+  width: 35%;
+  aspect-ratio: 4 / 5;
+  flex-shrink: 0;
+  opacity: 0.7;
+}
+
+.cs2-showcase-img--main {
+  width: 55%;
+  aspect-ratio: 16 / 10;
+  flex-shrink: 0;
+}
+
+.cs2-showcase-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .cs2-showcase-inner {
+    flex-direction: column;
+  }
+  .cs2-showcase-img--left,
+  .cs2-showcase-img--main {
+    width: 100%;
+  }
+}
+
+/* ── Journal section ─────────────────────────────────────── */
+.cs2-journal {
+  background: var(--bg);
+  color: var(--white);
+  padding: clamp(64px, 8vw, 112px) 0;
+}
+
+.cs2-journal-heading {
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-weight: 300;
+  letter-spacing: -0.025em;
+  margin-bottom: clamp(32px, 5vw, 64px);
+}
+
+.cs2-journal-heading a {
+  color: var(--white);
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.cs2-journal-heading a:hover { opacity: 0.7; }
+
+
+/* ============================================================
+   ORIGINAL CASE STUDY STYLES (kept for reference)
    ============================================================ */
 
 /* ── HEADER (transparent over hero) ─────────────────────── */
