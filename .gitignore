@@ -3,3 +3,6 @@ journal/*.md
 journal/post-template.html
 services/*.md
 services/*-template.html
+portfolio/*.md
+portfolio/*-template.html
+portfolio/example-folder/
