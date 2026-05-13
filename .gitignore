@@ -1,6 +1,7 @@
 # Local only — never deploy
 .DS_Store
 **/.DS_Store
+CLAUDE.md
 journal/*.md
 journal/post-template.html
 services/*.md
