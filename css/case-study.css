@@ -791,7 +791,7 @@
 
 .faq-layout {
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 44% 1fr;
   gap: 0;
   max-width: var(--max-w, 1360px);
   margin: 0 auto;
@@ -807,8 +807,8 @@
 }
 
 .faq-sidebar-title {
-  font-size: clamp(2.5rem, 5vw, 4rem);
-  font-weight: 300;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 600;
   letter-spacing: -0.03em;
   color: #000;
   line-height: 1;
@@ -907,18 +907,18 @@
 .faq-section:last-child { margin-bottom: 0; }
 
 .faq-section-heading {
-  font-size: clamp(1rem, 1.3vw, 1.125rem);
-  font-weight: 400;
-  letter-spacing: -0.01em;
+  font-size: clamp(1.5rem, 2.2vw, 2.25rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
   color: #000;
-  margin-bottom: 24px;
+  margin-bottom: 28px;
   display: flex;
   align-items: baseline;
-  gap: 8px;
+  gap: 10px;
 }
 
 .faq-section-count {
-  font-size: 0.8rem;
+  font-size: 1rem;
   font-weight: 300;
   color: #999;
 }
