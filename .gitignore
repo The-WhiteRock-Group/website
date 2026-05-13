@@ -1,0 +1,5 @@
+# Local only — never deploy
+journal/*.md
+journal/post-template.html
+services/*.md
+services/*-template.html

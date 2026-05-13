@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO -->
+  <title>Services | The WhiteRock Group</title>
+  <meta name="description" content="The WhiteRock Group delivers Revenue Value Creation™, AI Enablement & Technology, and Go-to-Market strategy for founders, PE firms, and B2B companies ready to scale.">
+  <meta name="author" content="The WhiteRock Group">
+  <link rel="canonical" href="https://thewhiterockgroup.co/services/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services | The WhiteRock Group">
+  <meta property="og:description" content="The WhiteRock Group delivers Revenue Value Creation™, AI Enablement & Technology, and Go-to-Market strategy for founders, PE firms, and B2B companies ready to scale.">
+  <meta property="og:url" content="https://thewhiterockgroup.co/services/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://thewhiterockgroup.co/assets/services/services-og.jpg">
+  <meta property="og:image:alt" content="The WhiteRock Group — Services">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Services | The WhiteRock Group">
+  <meta name="twitter:description" content="Revenue Value Creation™, AI Enablement & Technology, and Go-to-Market strategy for founders and PE firms.">
+  <meta name="twitter:image" content="https://thewhiterockgroup.co/assets/services/services-og.jpg">
+  <meta name="twitter:image:alt" content="The WhiteRock Group — Services">
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "The WhiteRock Group",
+    "url": "https://thewhiterockgroup.co",
+    "logo": "https://thewhiterockgroup.co/assets/logo-dark.png",
+    "description": "The WhiteRock Group is a Revenue Value Creation™ firm partnering with private equity firms, founders, and B2B service providers to scale revenue and build lasting value.",
+    "email": "info@whiterockconsultingco.com",
+    "sameAs": [
+      "https://www.linkedin.com/company/thewhiterockgroup/",
+      "https://www.instagram.com/thewhiterockgroup/"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Revenue Value Creation™", "url": "https://thewhiterockgroup.co/services/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "AI Enablement & Technology", "url": "https://thewhiterockgroup.co/services/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Go-to-Market & Sales", "url": "https://thewhiterockgroup.co/services/" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand & Experience", "url": "https://thewhiterockgroup.co/services/" } }
+      ]
+    }
+  }
+  </script>
+
+  <!-- FAQ Schema (AEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does The WhiteRock Group provide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The WhiteRock Group provides Revenue Value Creation™, AI Enablement & Technology, Go-to-Market & Sales strategy, and Brand & Experience services. They partner with private equity firms, founders, and B2B service providers to scale revenue and build lasting enterprise value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries does The WhiteRock Group work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The WhiteRock Group works across Private Equity, B2B Services, SaaS & Technology, Professional Services, Healthcare, Financial Services, Real Estate, and Emerging Markets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is Revenue Value Creation™?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Revenue Value Creation™ is The WhiteRock Group's proprietary methodology for aligning strategy, systems, revenue operations, and go-to-market execution to drive measurable, lasting enterprise value for founders and PE-backed businesses."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* ============================================================
+       SERVICES PAGE — page-specific styles
+    ============================================================ */
+
+    /* ── SECTION 1: What We Do (white bg) ─────────────────── */
+    .svc-top {
+      background: #fff;
+      color: #000;
+      padding-top: calc(var(--nav-h) + clamp(64px, 10vw, 120px));
+      padding-bottom: clamp(64px, 8vw, 112px);
+    }
+
+    .svc-hero-h1 {
+      font-size: clamp(1.575rem, 3.85vw, 3.85rem);
+      font-weight: 300;
+      letter-spacing: -0.03em;
+      line-height: 1.08;
+      color: #000;
+      max-width: 75%;
+      margin-bottom: clamp(32px, 4vw, 56px);
+    }
+
+    .svc-top-cta {
+      margin-bottom: clamp(48px, 6vw, 80px);
+    }
+
+    .svc-eyebrow {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #000;
+      margin-bottom: 0;
+      padding: clamp(20px, 3vw, 32px) 0 0;
+    }
+
+    .svc-list {
+      list-style: none;
+      margin-top: 0;
+    }
+
+    .svc-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: clamp(28px, 4vw, 48px) 0;
+      border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .svc-list .svc-item:last-child {
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    @media (min-width: 768px) {
+      .svc-item {
+        grid-template-columns: 1fr auto;
+        align-items: start;
+        gap: clamp(40px, 6vw, 120px);
+      }
+    }
+
+    .svc-item-left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .svc-num {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+      background: #000;
+      color: #fff;
+      border-radius: 50%;
+      font-size: 0.875rem;
+      font-weight: 400;
+      flex-shrink: 0;
+      letter-spacing: 0;
+    }
+
+    .svc-item h2 {
+      font-size: clamp(1.4rem, 2.5vw, 2.25rem);
+      font-weight: 300;
+      letter-spacing: -0.025em;
+      line-height: 1.15;
+      color: #000;
+    }
+
+    .svc-desc {
+      font-size: clamp(0.825rem, 1vw, 0.9375rem);
+      font-weight: 300;
+      letter-spacing: -0.01em;
+      line-height: 1.65;
+      color: #444;
+      max-width: 320px;
+      text-align: left;
+    }
+
+    @media (max-width: 767px) {
+      .svc-desc { max-width: 100%; }
+    }
+
+    /* ── SECTION 2: Verticals (dark olive) ─────────────────── */
+    .svc-verticals {
+      background: #3d4535;
+      color: #e8e4da;
+      padding: clamp(64px, 8vw, 112px) 0;
+    }
+
+    .svc-verticals-inner {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(40px, 6vw, 80px);
+    }
+
+    @media (min-width: 768px) {
+      .svc-verticals-inner {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+      }
+    }
+
+    .svc-verticals-left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .svc-verticals-label {
+      font-size: 20px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #e8e4da;
+    }
+
+    .svc-industries {
+      list-style: none;
+    }
+
+    .svc-industry-item {
+      padding: clamp(18px, 2.5vw, 28px) 0;
+      border-top: 1px solid rgba(232,228,218,0.15);
+      font-size: clamp(1.25rem, 2.5vw, 2rem);
+      font-weight: 300;
+      letter-spacing: -0.025em;
+      line-height: 1.2;
+      transition: opacity 0.2s;
+    }
+
+    .svc-industries .svc-industry-item:last-child {
+      border-bottom: 1px solid rgba(232,228,218,0.15);
+    }
+
+    .svc-industry-item:hover { opacity: 0.6; }
+
+    /* ── SECTION 3: Capabilities (light grey) ──────────────── */
+    .svc-capabilities {
+      background: var(--off-white);
+      color: #000;
+      padding: clamp(64px, 8vw, 112px) 0;
+    }
+
+    .svc-capabilities-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(40px, 6vw, 72px) clamp(40px, 6vw, 80px);
+    }
+
+    @media (min-width: 768px) {
+      .svc-capabilities-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .svc-cap-col {
+      padding-top: clamp(28px, 4vw, 40px);
+      border-top: 1px solid rgba(0,0,0,0.15);
+    }
+
+    .svc-cap-heading {
+      font-size: clamp(1rem, 1.5vw, 1.25rem);
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      color: #000;
+      margin-bottom: clamp(12px, 2vw, 20px);
+    }
+
+    .svc-cap-body {
+      font-size: clamp(0.8125rem, 1vw, 0.9375rem);
+      font-weight: 300;
+      letter-spacing: -0.01em;
+      line-height: 1.7;
+      color: #444;
+      margin-bottom: clamp(16px, 2vw, 24px);
+    }
+
+    .svc-cap-list {
+      list-style: none;
+    }
+
+    .svc-cap-list li {
+      font-size: clamp(0.8125rem, 1vw, 0.9375rem);
+      font-weight: 300;
+      letter-spacing: -0.01em;
+      line-height: 1.8;
+      color: #333;
+      padding-left: 1em;
+      position: relative;
+    }
+
+    .svc-cap-list li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: #999;
+      font-size: 0.75em;
+      top: 0.2em;
+    }
+
+    /* ── SECTION 4: Testimonial (white) ────────────────────── */
+    .svc-testimonial {
+      background: #fff;
+      color: #000;
+      padding: clamp(80px, 12vw, 160px) 0;
+      text-align: center;
+    }
+
+    .svc-testimonial-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .svc-testimonial-attr {
+      font-size: 10px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #888;
+      margin-bottom: clamp(24px, 3vw, 40px);
+    }
+
+    .svc-testimonial-quote {
+      font-size: clamp(1.2rem, 2.8vw, 2.4rem);
+      font-weight: 300;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      color: #000;
+      margin-bottom: clamp(32px, 4vw, 56px);
+    }
+
+    /* ── SECTION 5: Journal (dark) ─────────────────────────── */
+    .svc-journal {
+      background: var(--bg);
+      color: var(--white);
+      padding: clamp(64px, 8vw, 112px) 0;
+    }
+
+    .svc-journal-heading {
+      font-size: clamp(1.5rem, 3vw, 2.5rem);
+      font-weight: 300;
+      letter-spacing: -0.025em;
+      margin-bottom: clamp(32px, 5vw, 64px);
+    }
+
+    .svc-journal-heading a {
+      color: var(--white);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+    .svc-journal-heading a:hover { opacity: 0.7; }
+  </style>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+
+  <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+  <header class="header-dark-bg">
+    <div class="page-inner header-inner">
+      <a href="../index.html" class="nav-logo" aria-label="The WhiteRock Group">
+        <img src="../assets/logo-dark.png" alt="The WhiteRock Group" style="height:22px;width:auto;display:block;">
+      </a>
+      <button id="menu-btn" class="menu-btn menu-btn--dark" aria-controls="slide-nav" aria-haspopup="true" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+  <nav id="slide-nav" class="slide-nav" aria-label="Main navigation">
+    <a href="../index.html" style="display:block;margin-bottom:48px;" aria-label="The WhiteRock Group home">
+      <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:18px;width:auto;">
+    </a>
+    <ul>
+      <li><a href="../services/">Services</a></li>
+      <li><a href="../index.html">Work</a></li>
+      <li><a href="../about.html">About</a></li>
+      <li><a href="../journal.html">Journal</a></li>
+      <li><a href="../partners.html">Partners</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+    </ul>
+    <div class="slide-nav-footer">
+      <a href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
+    </div>
+  </nav>
+
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 1 — WHAT WE DO
+    ═══════════════════════════════════════════ -->
+    <section class="svc-top">
+      <div class="page-inner">
+
+        <!-- Hero headline -->
+        <h1 class="svc-hero-h1">We combine strategic direction, embedded execution, and AI-powered innovation across people, process, and platforms.</h1>
+        <div class="svc-top-cta">
+          <a href="../contact.html" class="btn-pill btn-pill--outline-dark">Get in touch</a>
+        </div>
+
+        <!-- Space before What We Do -->
+        <div style="height: clamp(24px, 3vw, 40px);"></div>
+
+        <p class="svc-eyebrow">What We Do</p>
+
+        <ul class="svc-list">
+
+          <li class="svc-item">
+            <div class="svc-item-left">
+              <span class="svc-num">1</span>
+              <h2>Revenue Value Creation™</h2>
+            </div>
+            <p class="svc-desc">We identify the constraints limiting growth, margin, customer experience, and enterprise value — then build the plan to remove them.</p>
+          </li>
+
+          <li class="svc-item">
+            <div class="svc-item-left">
+              <span class="svc-num">2</span>
+              <h2>Go-To-Market &amp; Sales Enablement</h2>
+            </div>
+            <p class="svc-desc">We help leadership teams sharpen positioning, improve pipeline quality, increase sales effectiveness, and create a repeatable system for growth.</p>
+          </li>
+
+          <li class="svc-item">
+            <div class="svc-item-left">
+              <span class="svc-num">3</span>
+              <h2>AI Enablement &amp; Revenue Systems</h2>
+            </div>
+            <p class="svc-desc">We help companies adopt AI where it matters most: sales productivity, workflow automation, customer experience, CRM operations, reporting, and decision-making.</p>
+          </li>
+
+          <li class="svc-item">
+            <div class="svc-item-left">
+              <span class="svc-num">4</span>
+              <h2>Portfolio &amp; Founder Growth Advisory</h2>
+            </div>
+            <p class="svc-desc">We support companies in the moments that matter: diligence, integration, growth, transformation, and exit preparation.</p>
+          </li>
+
+        </ul>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 2 — VERTICALS
+    ═══════════════════════════════════════════ -->
+    <section class="svc-verticals">
+      <div class="page-inner">
+        <div class="svc-verticals-inner">
+
+          <!-- Left: CTA -->
+          <div class="svc-verticals-left">
+            <p class="svc-verticals-label">Our Verticals</p>
+            <a href="../contact.html" class="btn-pill">Get in touch</a>
+          </div>
+
+          <!-- Right: Industry list -->
+          <ul class="svc-industries">
+            <li class="svc-industry-item">Private Equity</li>
+            <li class="svc-industry-item">Family Offices</li>
+            <li class="svc-industry-item">Founder-Led Companies</li>
+            <li class="svc-industry-item">Portfolio Companies</li>
+            <li class="svc-industry-item">B2B Services</li>
+            <li class="svc-industry-item">Health, Wellness &amp; Human Performance</li>
+            <li class="svc-industry-item">AI &amp; Technology-Enabled Services</li>
+            <li class="svc-industry-item">Growth-Stage Operators</li>
+          </ul>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 3 — CAPABILITIES
+    ═══════════════════════════════════════════ -->
+    <section class="svc-capabilities">
+      <div class="page-inner">
+        <div class="svc-capabilities-grid">
+
+          <div class="svc-cap-col">
+            <p class="svc-cap-heading">Operations &amp; Technology Due Diligence</p>
+            <p class="svc-cap-body">We help investors and operators understand whether the growth story is real, fragile, or fixable. Our work uncovers the revenue, customer, sales, technology, and leadership constraints that can quietly erode value before or after investment. Our high-impact operational capabilities, state-of-the-art tools, and unrivaled expertise provide operational and technology due diligence under one roof.</p>
+            <ul class="svc-cap-list">
+              <li>Revenue operations assessment</li>
+              <li>Customer and market signal review</li>
+              <li>Sales motion and buying friction analysis</li>
+              <li>Pipeline quality assessment</li>
+              <li>Objection and win/loss analysis</li>
+              <li>"Do nothing" loss analysis</li>
+              <li>AI and technology readiness</li>
+              <li>CRM, data, and reporting review</li>
+            </ul>
+          </div>
+
+          <div class="svc-cap-col">
+            <p class="svc-cap-heading">Performance Acceleration</p>
+            <p class="svc-cap-body">We help leadership teams move faster after investment. Together, we identify what needs to change first, where the business is losing momentum, and which improvements will create the greatest return in the shortest amount of time.</p>
+            <ul class="svc-cap-list">
+              <li>First 90-day commercial operating plan</li>
+              <li>Commercial leader support</li>
+              <li>Founder/operator alignment</li>
+              <li>Sales strategy and management</li>
+              <li>Commercial talent assessment</li>
+              <li>Board-ready growth priorities</li>
+              <li>Decision support</li>
+              <li>Leadership operating cadence</li>
+            </ul>
+          </div>
+
+          <div class="svc-cap-col">
+            <p class="svc-cap-heading">AI-Powered Revenue Systems</p>
+            <p class="svc-cap-body">We help teams adopt AI and technology where it improves revenue performance, customer experience, operating efficiency, and decision-making. We go beyond deployment to build the workflows, habits, and systems teams actually use.</p>
+            <ul class="svc-cap-list">
+              <li>AI use-case mapping</li>
+              <li>CRM and revenue system optimization</li>
+              <li>Workflow automation</li>
+              <li>Sales productivity tools</li>
+              <li>Reporting dashboards</li>
+              <li>Knowledge management</li>
+              <li>Customer support enablement</li>
+              <li>Team adoption and training</li>
+            </ul>
+          </div>
+
+          <div class="svc-cap-col">
+            <p class="svc-cap-heading">Revenue Value Creation™</p>
+            <p class="svc-cap-body">We identify and remove the constraints that prevent companies from becoming more valuable, durable, and customer-centric. Through Revenue Value Creation™, we align strategy, sales, revenue operations, AI adoption, customer experience, and execution into one operating system for growth.</p>
+            <ul class="svc-cap-list">
+              <li>Revenue Value Creation™ Diagnostic</li>
+              <li>Revenue Friction Score™</li>
+              <li>Enterprise value roadmap</li>
+              <li>GTM alignment</li>
+              <li>Customer experience strategy</li>
+              <li>Sales enablement systems</li>
+              <li>Portfolio growth support</li>
+              <li>Exit readiness narrative</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 4 — TESTIMONIAL
+    ═══════════════════════════════════════════ -->
+    <section class="svc-testimonial">
+      <div class="page-inner">
+        <div class="svc-testimonial-inner">
+          <p class="svc-testimonial-attr">Stephen Holden — Holden Brand, CEO</p>
+          <blockquote class="svc-testimonial-quote">
+            "Chelsea and her team bring a lot of wisdom to the table. Not only do they help navigate and provide strategic direction, but Chelsea has a gift for articulating hard concepts into simple principles anyone can understand. I really appreciate that."
+          </blockquote>
+          <a href="../contact.html" class="btn-pill btn-pill--outline-dark">Get in touch</a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════
+         SECTION 5 — FROM THE JOURNAL
+    ═══════════════════════════════════════════ -->
+    <section class="svc-journal">
+      <div class="page-inner">
+
+        <h2 class="svc-journal-heading">
+          <a href="../journal.html">From the journal &rarr;</a>
+        </h2>
+
+        <div class="news-grid">
+
+          <article class="news-card visible">
+            <div class="news-card-media">
+              <!-- Replace with: <img src="../assets/posts/[slug]-hero.jpg" alt="[description]" class="loaded"> -->
+              <div style="position:absolute;inset:0;background:#1a1a1a;"></div>
+            </div>
+            <p class="news-card-eyebrow">Article</p>
+            <h3>[Journal Post Title One]</h3>
+            <a class="news-card-link" href="../journal/[slug].html">Read more</a>
+          </article>
+
+          <article class="news-card visible" style="transition-delay:0.1s;">
+            <div class="news-card-media">
+              <div style="position:absolute;inset:0;background:#111;"></div>
+            </div>
+            <p class="news-card-eyebrow">Insights</p>
+            <h3>[Journal Post Title Two]</h3>
+            <a class="news-card-link" href="../journal/[slug].html">Read more</a>
+          </article>
+
+          <article class="news-card visible" style="transition-delay:0.2s;">
+            <div class="news-card-media">
+              <div style="position:absolute;inset:0;background:#222;"></div>
+            </div>
+            <p class="news-card-eyebrow">Signals</p>
+            <h3>[Journal Post Title Three]</h3>
+            <a class="news-card-link" href="../journal/[slug].html">Read more</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer>
+    <div class="page-inner">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-contact-label">Contact Us</p>
+          <p class="footer-tagline">Let's peer over the horizon together</p>
+          <a class="footer-email" href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
+        </div>
+        <div class="footer-nav-cols">
+          <div>
+            <p>WR.G</p>
+            <ul>
+              <li><a href="../services/">Services</a></li>
+              <li><a href="../index.html">Work</a></li>
+              <li><a href="../about.html">About</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>More</p>
+            <ul>
+              <li><a href="../journal.html">Journal</a></li>
+              <li><a href="../partners.html">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Follow</p>
+            <ul>
+              <li><a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener">LinkedIn</a></li>
+              <li><a href="https://www.instagram.com/thewhiterockgroup/" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a href="https://open.spotify.com/user/nya1o2vhaddlb4vvhm9b5kr8k" target="_blank" rel="noopener">Spotify</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-mailing">
+          <form id="mailing-form" novalidate>
+            <label for="footer-email-input">Signals for Founders</label>
+            <div class="footer-email-wrap">
+              <input id="footer-email-input" type="email" name="email" class="footer-input" placeholder="Your email" required autocomplete="email">
+              <button type="submit" class="footer-submit" aria-label="Join mailing list">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
+                  <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-legal">The WhiteRock Group is a proudly inclusive organisation and an active firm in the local community and support movements toward equality.</p>
+        <div></div>
+        <div style="text-align:left;">
+          <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:16px;width:auto;opacity:0.5;margin-bottom:12px;">
+          <p class="footer-legal">© The WhiteRock Group 2026<br>All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+
+</body>
+</html>
