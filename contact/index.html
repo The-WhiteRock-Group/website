@@ -7,25 +7,26 @@
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
   })(window,document,'script','dataLayer','GTM-5876HGC3');</script>
-  <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | The WhiteRock Group | Revenue Value Creation™</title>
-  <meta name="description" content="Let's talk. Reach out to The WhiteRock Group to explore how we can help you grow, scale, and build a more valuable business.">
+  <title>Contact | The WhiteRock Group</title>
+  <meta name="description" content="Get in touch with The WhiteRock Group to discuss revenue operations engagements, partnerships, or media opportunities.">
+  <meta name="author" content="The WhiteRock Group">
   <link rel="canonical" href="https://thewhiterockgroup.co/contact/">
   <meta property="og:title" content="Contact | The WhiteRock Group">
-  <meta property="og:description" content="Let's talk. Reach out to The WhiteRock Group to explore how we can help you grow, scale, and build a more valuable business.">
+  <meta property="og:description" content="Get in touch to discuss engagements, partnerships, or media opportunities.">
   <meta property="og:url" content="https://thewhiterockgroup.co/contact/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://thewhiterockgroup.co/assets/logo-dark.png">
+  <meta property="og:image" content="https://thewhiterockgroup.co/assets/wrg-hero-poster.jpg">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contact | The WhiteRock Group">
+  <meta name="twitter:description" content="Get in touch to discuss engagements, partnerships, or media opportunities.">
+  <meta name="twitter:image" content="https://thewhiterockgroup.co/assets/wrg-hero-poster.jpg">
   <link rel="icon" href="../assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-
-  <!-- Google Analytics -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..700&family=Source+Code+Pro:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=20260717c">
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-39KHHYPNS4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -33,216 +34,386 @@
     gtag('js', new Date());
     gtag('config', 'G-39KHHYPNS4');
   </script>
-</head>
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5876HGC3"
-  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    .ct-page{background:#1D4D68;color:#F2F6FA;min-height:100vh;}
 
-  <!-- ═══════════════════════════════════════════
-       HEADER
-  ═══════════════════════════════════════════ -->
-  <header class="header-dark-bg">
+    .wr-announce{
+      position:relative;z-index:40;height:52px;
+      background:#DEF282;color:#162029;
+      display:flex;align-items:center;justify-content:center;gap:20px;
+      padding:0 clamp(16px,3vw,32px);text-align:center;
+    }
+    .wr-announce-label{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:600;
+      font-size:0.9375rem;letter-spacing:0.12em;text-transform:uppercase;flex:none;
+    }
+    .wr-announce-text{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;font-size:1rem;line-height:1.3;letter-spacing:0.03em;text-transform:uppercase;
+      margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    }
+    .wr-announce-link{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:600;font-size:1rem;letter-spacing:0.03em;text-transform:uppercase;
+      color:inherit;text-decoration:underline;text-underline-offset:3px;flex:none;
+    }
+    @media(max-width:768px){
+      .wr-announce{gap:10px;}
+      .wr-announce-text{white-space:normal;font-size:1rem;}
+      .wr-announce-label{display:none;}
+    }
+
+    header{position:static;background:#1D4D68;padding:16px 0;color:#F2F6FA;pointer-events:auto;}
+    .nav-link{color:rgba(242,246,250,0.65);}
+    .nav-link:hover{color:#F2F6FA;}
+    .nav-link--dropdown::after{border-right-color:rgba(242,246,250,0.65);border-bottom-color:rgba(242,246,250,0.65);}
+    .menu-btn{color:#F2F6FA;}
+    .nav-cta{background:#DEF282;color:#162029;}
+    .nav-cta::after{background:#c9de6b;color:#162029;}
+
+    .ct-wrap{max-width:none;margin:0 auto;padding:0 clamp(16px,2.78vw,40px);}
+
+    .ct-h1{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:clamp(4rem,calc(0.44rem + 15.2vw),14.125rem);line-height:1;letter-spacing:-0.04em;
+      color:#F2F6FA;margin:clamp(16px,2vw,30px) 0 0;
+    }
+    .ct-body{padding:clamp(72px,8.7vw,125px) 0 clamp(96px,13vw,190px);}
+    .ct-col{max-width:836px;margin:0 auto;}
+    .ct-intro{
+      font-family:'Inter',sans-serif;font-weight:450;
+      font-size:clamp(1.5rem,calc(1.26rem + 1.03vw),2.1875rem);line-height:1.2;letter-spacing:-0.02em;
+      color:#F2F6FA;margin:0 0 80px;text-wrap:pretty;max-width:24ch;
+    }
+    .ct-intro-mark{background:linear-gradient(transparent 62%, #DEF282 62%, #DEF282 92%, transparent 92%);}
+
+    .ct-field{
+      border:1px solid rgba(242,246,250,0.2);border-radius:4px;
+      padding:22px 24px 26px;margin-bottom:8px;
+    }
+    .ct-field label{
+      display:block;
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;
+      font-size:0.75rem;letter-spacing:0.12em;text-transform:uppercase;
+      color:rgba(242,246,250,0.7);margin:0 0 20px;
+    }
+    .ct-field input,.ct-field select,.ct-field textarea{
+      width:100%;background:transparent;border:0;outline:none;
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:clamp(1.5rem,calc(1.236rem + 1.127vw),2.25rem);
+      color:#F2F6FA;padding:0;line-height:1.2;
+    }
+    .ct-field input::placeholder,.ct-field textarea::placeholder{color:rgba(242,246,250,0.55);}
+    .ct-field select{appearance:none;-webkit-appearance:none;cursor:pointer;}
+    .ct-field--select{position:relative;}
+    .ct-field--select::after{
+      content:'';position:absolute;right:18px;top:50%;
+      width:8px;height:8px;border-right:1.5px solid #AFC2CC;border-bottom:1.5px solid #AFC2CC;
+      transform:translateY(-70%) rotate(45deg);pointer-events:none;
+    }
+    .ct-field select option{color:#162029;background:#F2F6FA;}
+    .ct-field textarea{min-height:200px;resize:vertical;}
+    .ct-field:focus-within{border-color:#DEF282;}
+
+    .ct-submit{
+      width:100%;display:block;border:0;cursor:pointer;
+      font-family:'Inter',sans-serif;font-weight:500;
+      font-size:0.9375rem;letter-spacing:0.08em;text-transform:uppercase;
+      background:#DEF282;color:#162029;padding:27px;border-radius:4px;
+      margin-top:8px;transition:filter .2s;
+    }
+    .ct-submit:hover{filter:brightness(1.06);}
+    .ct-submit:disabled{opacity:0.6;cursor:default;}
+    .ct-msg{
+      font-family:'Inter',sans-serif;font-size:0.875rem;line-height:1.5;
+      margin:16px 0 0;min-height:1.4em;
+    }
+    .ct-msg.ok{color:#DEF282;}
+    .ct-msg.err{color:#ffb4a2;}
+
+    .cta-simple{background:#162029;padding:clamp(110px,14vw,190px) 0;text-align:center;position:relative;overflow:hidden;}
+    .cta-simple-frame{position:absolute;inset:clamp(14px,1.6vw,24px);border:1px solid rgba(175,194,204,0.18);pointer-events:none;}
+    .cta-corner{position:absolute;width:6px;height:6px;background:#DEF282;z-index:1;}
+    .cta-corner--tl{top:clamp(11px,1.4vw,21px);left:clamp(11px,1.4vw,21px);}
+    .cta-corner--tr{top:clamp(11px,1.4vw,21px);right:clamp(11px,1.4vw,21px);}
+    .cta-corner--bl{bottom:clamp(11px,1.4vw,21px);left:clamp(11px,1.4vw,21px);}
+    .cta-corner--br{bottom:clamp(11px,1.4vw,21px);right:clamp(11px,1.4vw,21px);}
+    .cta-simple > *{position:relative;z-index:1;}
+    .cta-kicker{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;
+      font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;
+      color:#AFC2CC;margin:0 0 28px;
+    }
+    .cta-simple-h2{
+      font-family:'Inter',sans-serif;font-weight:450;
+      font-size:clamp(2.5rem,calc(1.656rem + 3.605vw),4.9rem);line-height:1.05;letter-spacing:-0.04em;
+      color:#F2F6FA;margin:0 auto 44px;text-wrap:balance;
+    }
+    .cta-period{color:#DEF282;}
+    .cta-simple-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+    .cta-btn{
+      display:inline-flex;align-items:center;gap:10px;
+      font-family:'Inter',sans-serif;font-weight:500;
+      font-size:0.8125rem;letter-spacing:0.06em;text-transform:uppercase;
+      padding:16px 26px;border-radius:4px;text-decoration:none;transition:filter .2s,border-color .2s,color .2s;
+    }
+    .cta-btn--primary{background:#DEF282;color:#162029;}
+    .cta-btn--primary:hover{filter:brightness(1.06);}
+    .cta-btn--secondary{background:transparent;color:#F2F6FA;border:1px solid rgba(175,194,204,0.45);}
+    .cta-btn--secondary:hover{border-color:#DEF282;color:#DEF282;}
+    .cta-btn--secondary svg{display:block;}
+    /* footer — Saronic style */
+    .vx-label{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;
+      font-size:0.625rem;letter-spacing:0.14em;text-transform:uppercase;
+      color:#AFC2CC;margin:0 0 14px;
+    }
+    footer.sx-footer{background:#10161D;color:#F2F6FA;padding:0;}
+    .sx-grid{display:grid;grid-template-columns:1fr 1.5fr 1.5fr;min-height:520px;}
+    .sx-col{border-left:1px solid rgba(255,255,255,0.08);padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;}
+    .sx-col:first-child{border-left:0;padding:0;}
+    .sx-brandbox{padding:clamp(28px,3vw,44px);flex:1;}
+    .sx-logo{width:clamp(150px,13vw,190px);height:auto;display:block;}
+    .sx-joinbox{border-top:1px solid rgba(255,255,255,0.08);padding:clamp(24px,2.5vw,36px) clamp(28px,3vw,44px);}
+    .sx-join-p{font-family:'Inter',sans-serif;font-weight:400;font-size:0.9375rem;line-height:1.55;color:#F2F6FA;margin:12px 0 20px;max-width:26ch;}
+    .sx-btn{
+      display:inline-flex;align-items:center;gap:12px;
+      font-family:'Inter',sans-serif;font-weight:500;font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;
+      background:#DEF282;color:#162029;padding:12px 16px;border-radius:4px;text-decoration:none;transition:filter .2s;
+    }
+    .sx-btn:hover{filter:brightness(1.06);}
+    .sx-bottombox{border-top:1px solid rgba(255,255,255,0.08);padding:clamp(20px,2vw,28px) clamp(28px,3vw,44px);}
+    .sx-small{font-family:'Inter',sans-serif;font-weight:400;font-size:0.8125rem;color:#F2F6FA;margin:0 0 6px;}
+    .sx-dim{color:rgba(242,246,250,0.45);}
+    .sx-addr{margin:14px 0 18px;line-height:1.5;}
+    .sx-bottombox .sx-small:first-child{font-size:1.625rem;letter-spacing:-0.02em;}
+    .sx-texas{display:flex;align-items:center;gap:14px;}
+    .sx-tx{width:40px;height:auto;display:block;flex:none;}
+    .sx-btn:not([href]){cursor:default;}
+    .sx-btn:not([href]):hover{filter:none;}
+    .sx-navlist{display:flex;flex-direction:column;gap:6px;margin-top:clamp(32px,4vw,56px);}
+    .sx-navlist a{
+      font-family:'Inter',sans-serif;font-weight:300;
+      font-size:clamp(1.625rem,2.4vw,2.125rem);letter-spacing:-0.02em;
+      color:#AFC2CC;text-decoration:none;transition:color .2s;width:fit-content;
+    }
+    .sx-navlist a:hover{color:#F2F6FA;}
+    .sx-navlist a[aria-current="page"]{color:#F2F6FA;}
+    .sx-connect{margin-top:auto;padding-top:40px;}
+    .sx-connect a{color:#AFC2CC;display:inline-flex;margin-right:14px;transition:color .2s;}
+    .sx-connect a:hover{color:#F2F6FA;}
+    @media(max-width:900px){
+      .sx-grid{grid-template-columns:1fr;}
+      .sx-col{border-left:0;border-top:1px solid rgba(255,255,255,0.08);}
+    }
+  </style>
+</head>
+<body class="ct-page">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5876HGC3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="wr-announce">
+    <span class="wr-announce-label">Announcement</span>
+    <p class="wr-announce-text">Partner spotlight: Renew Home announces major flexible-energy framework with Sunrun and Tesla.</p>
+    <a href="/insights/renew-home-flexible-energy-framework/" class="wr-announce-link">Learn More</a>
+  </div>
+
+  <header>
     <div class="page-inner header-inner">
-      <a href="../" class="nav-logo" aria-label="The WhiteRock Group">
-        <img src="../assets/logo-dark.png" alt="The WhiteRock Group" style="height:22px;width:auto;display:block;">
+      <a href="/" class="nav-wordmark" aria-label="The WhiteRock Group">
+        <img src="../assets/logo-wordmark-white.png" alt="The WhiteRock Group" class="nav-wordmark-img">
       </a>
-      <button id="menu-btn" class="menu-btn menu-btn--dark" aria-controls="slide-nav" aria-haspopup="true" aria-expanded="false">
-        Menu
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/#services" class="nav-link">Services</a>
+        <a href="/mission/" class="nav-link">Mission</a>
+        <a href="/insights/" class="nav-link">Insights</a>
+      </nav>
+      <a href="/contact/" class="nav-cta">Contact Us</a>
+      <button id="menu-btn" class="menu-btn" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
     </div>
   </header>
-
-  <!-- Slide-out nav overlay -->
   <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
-
-  <!-- Slide-out nav panel -->
-  <nav id="slide-nav" class="slide-nav" aria-label="Main navigation">
-    <a href="../" style="display:block;margin-bottom:48px;" aria-label="The WhiteRock Group home">
-      <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:18px;width:auto;">
-    </a>
+  <nav id="slide-nav" class="slide-nav" aria-label="Mobile navigation">
     <ul>
-      <li><a href="../services/">Services</a></li>
-      <li><a href="../">Work</a></li>
-      <li><a href="../about/">About</a></li>
-      <li><a href="../journal/">Journal</a></li>
-      <li><a href="../partners/">Partners</a></li>
-      <li><a href="../contact/">Contact</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/mission/">Mission</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/contact/">Contact Us</a></li>
     </ul>
-    <div class="slide-nav-footer">
-      <a href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
-    </div>
   </nav>
 
-
   <main>
-
-    <!-- ═══════════════════════════════════════════
-         TOP — WHITE SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="contact-top">
-      <div class="page-inner">
-        <div class="contact-top-grid">
-
-          <!-- Left: headline -->
-          <div>
-            <h1 class="contact-h1">Interested in working with<br>The WhiteRock Group?</h1>
-          </div>
-
-          <!-- Right: info blocks -->
-          <div>
-
-            <!-- Get in touch -->
-            <p class="contact-info-label">Get in Touch</p>
-            <p class="contact-info-value">
-              <a href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
-            </p>
-
-            <hr class="contact-divider">
-
-            <!-- Signals for Founders -->
-            <p class="contact-info-label">Signals for Founders</p>
-            <p class="contact-newsletter-body">Emails suck, but maybe ours are the exception? If you'd like to risk an occasional dip into the WR.G river of dreams sign up here:</p>
-            <div class="footer-email-wrap" style="max-width:420px;">
-              <input
-                id="contact-newsletter-input"
-                type="email"
-                class="footer-input footer-input--dark"
-                placeholder="Your email"
-                autocomplete="email"
-              >
-              <button id="contact-newsletter-btn" type="button" class="footer-submit footer-submit--dark" aria-label="Subscribe">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                  <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-
-            <hr class="contact-divider">
-
-            <!-- Socials -->
-            <p class="contact-info-label">WR.G Everywhere</p>
-            <div class="contact-socials">
-              <a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener" class="contact-social-pill">LinkedIn</a>
-              <a href="https://www.instagram.com/thewhiterockgroup/" target="_blank" rel="noopener" class="contact-social-pill">Instagram</a>
-              <a href="https://open.spotify.com/user/nya1o2vhaddlb4vvhm9b5kr8k" target="_blank" rel="noopener" class="contact-social-pill">Spotify</a>
-            </div>
-
-          </div>
-        </div>
-      </div>
+    <section class="ct-wrap">
+      <h1 class="ct-h1">Contact</h1>
     </section>
 
+    <section class="ct-body">
+      <div class="ct-wrap">
+        <div class="ct-col">
+          <p class="ct-intro">Get in touch to discuss engagements, partnerships, or media opportunities.</p>
 
-    <!-- ═══════════════════════════════════════════
-         FORM — BLACK SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="contact-form-section">
-      <div class="page-inner">
-        <script src="https://js-na2.hsforms.net/forms/embed/244284755.js" defer></script>
-        <div class="hs-form-frame" data-region="na2" data-form-id="3c4fb1c7-2c74-41cb-b95a-af08a982236d" data-portal-id="244284755"></div>
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- ═══════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════ -->
-  <footer>
-    <div class="page-inner">
-
-      <div class="footer-grid">
-
-        <!-- Contact -->
-        <div>
-          <p class="footer-contact-label">Contact Us</p>
-          <p class="footer-tagline">Let's peer over the horizon together</p>
-          <a class="footer-email" href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
-        </div>
-
-        <!-- Nav columns -->
-        <div class="footer-nav-cols">
-          <div>
-            <p>WR.G</p>
-            <ul>
-              <li><a href="../services/">Services</a></li>
-              <li><a href="../">Work</a></li>
-              <li><a href="../about/">About</a></li>
-              <li><a href="../contact/">Contact</a></li>
-            </ul>
-          </div>
-          <div>
-            <p>More</p>
-            <ul>
-              <li><a href="../journal/">Journal</a></li>
-              <li><a href="../partners/">Partners</a></li>
-              <li><a href="../faq/">FAQs</a></li>
-            </ul>
-          </div>
-          <div>
-            <p>Follow</p>
-            <ul>
-              <li><a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://www.instagram.com/thewhiterockgroup/" target="_blank" rel="noopener">Instagram</a></li>
-              <li><a href="https://open.spotify.com/user/nya1o2vhaddlb4vvhm9b5kr8k" target="_blank" rel="noopener">Spotify</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Mailing list -->
-        <div class="footer-mailing">
-          <form id="mailing-form" novalidate>
-            <label for="footer-email-input">Signals for Founders</label>
-            <div class="footer-email-wrap">
-              <input
-                id="footer-email-input"
-                type="email"
-                name="email"
-                class="footer-input"
-                placeholder="Your email"
-                required
-                autocomplete="email"
-              >
-              <button type="submit" class="footer-submit" aria-label="Join mailing list">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                  <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
+          <form id="ct-form" novalidate>
+            <div class="ct-field">
+              <label for="ct-name">Name</label>
+              <input id="ct-name" name="name" type="text" autocomplete="name" required>
             </div>
+            <div class="ct-field">
+              <label for="ct-email">Email</label>
+              <input id="ct-email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="ct-field">
+              <label for="ct-company">Company</label>
+              <input id="ct-company" name="company" type="text" autocomplete="organization">
+            </div>
+            <div class="ct-field">
+              <label for="ct-linkedin">LinkedIn (Optional)</label>
+              <input id="ct-linkedin" name="linkedin" type="text" placeholder="linkedin.com/in/johndoe">
+            </div>
+            <div class="ct-field ct-field--select">
+              <label for="ct-subject">Subject</label>
+              <select id="ct-subject" name="subject">
+                <option>Operations</option>
+                <option>Fractional COO</option>
+                <option>Partnerships</option>
+                <option>Media</option>
+                <option>Career</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="ct-field">
+              <label for="ct-message">Message</label>
+              <textarea id="ct-message" name="message" placeholder="How can we help?"></textarea>
+            </div>
+            <button type="submit" class="ct-submit">Submit</button>
+            <p class="ct-msg" id="ct-msg" role="status"></p>
           </form>
         </div>
-
-      </div><!-- /.footer-grid -->
-
-      <!-- Footer bottom legal -->
-      <div class="footer-bottom">
-        <p class="footer-legal">
-          The WhiteRock Group is a proudly inclusive organisation and an active firm in the local community and support movements toward equality.
-        </p>
-
-        <div></div>
-        <div style="text-align:left;">
-          <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:16px;width:auto;opacity:0.5;margin-bottom:12px;">
-          <p class="footer-legal">© The WhiteRock Group 2026<br>All rights reserved.</p>
+      </div>
+    </section>
+    <section class="cta-simple">
+      <span class="cta-simple-frame" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--tl" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--tr" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--bl" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--br" aria-hidden="true"></span>
+      <div class="cta-simple-wrap">
+        <p class="cta-kicker">Ready when you are</p>
+        <h2 class="cta-simple-h2">Operations define outcomes<span class="cta-period">.</span></h2>
+        <div class="cta-simple-btns">
+          <a href="/contact/" class="cta-btn cta-btn--primary">Get Started</a>
+          <a href="/insights/" class="cta-btn cta-btn--secondary">Insights
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </a>
         </div>
       </div>
+    </section>
+  </main>
 
+  <footer class="sx-footer">
+    <div class="sx-grid">
+      <div class="sx-col">
+        <div class="sx-brandbox">
+          <a href="/" aria-label="The WhiteRock Group home">
+            <img src="/assets/wrg-hero-logo.png" alt="WR.G" class="sx-logo">
+          </a>
+        </div>
+        <div class="sx-joinbox">
+          <p class="vx-label">Join Our Mission</p>
+          <p class="sx-join-p">Check out our open roles and let's build a more intelligent future, together.</p>
+          <a class="sx-btn" role="link" aria-disabled="true">View Job Openings
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </div>
+        <div class="sx-bottombox">
+          <p class="sx-small sx-texas"><img src="/assets/texas-lone-star.png" alt="" class="sx-tx" aria-hidden="true">Built in Texas</p>
+          <p class="sx-small sx-dim sx-addr">Dallas<br>6301 Gaston Ave,<br>Dallas, TX 75214</p>
+          <p class="sx-small sx-dim">&copy; 2026 The WhiteRock Group</p>
+        </div>
+      </div>
+      <nav class="sx-col" aria-label="Services">
+        <p class="vx-label">Services</p>
+        <div class="sx-navlist">
+          <a href="/#capabilities">Capabilities</a>
+          <a href="/#verticals">Verticals</a>
+        </div>
+      </nav>
+      <nav class="sx-col" aria-label="Company">
+        <p class="vx-label">Company</p>
+        <div class="sx-navlist">
+          <a href="/mission/">Mission</a>
+          <a href="/mission/">Team</a>
+          <a href="/insights/">Newsroom</a>
+          <a href="/contact/" aria-current="page">Contact</a>
+        </div>
+        <div class="sx-connect">
+          <p class="vx-label">Connect</p>
+          <a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </nav>
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=20260717c"></script>
   <script>
-    // Stage pill toggle
-    document.querySelectorAll('.contact-stage-pill').forEach(pill => {
-      pill.addEventListener('click', () => {
-        document.querySelectorAll('.contact-stage-pill').forEach(p => p.classList.remove('selected'));
-        pill.classList.add('selected');
-      });
-    });
-  </script>
+    (function(){
+      var form = document.getElementById('ct-form');
+      var msg  = document.getElementById('ct-msg');
+      var ENDPOINT = 'https://api.hsforms.com/submissions/v3/integration/submit/244284755/3c4fb1c7-2c74-41cb-b95a-af08a982236d';
 
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        msg.className = 'ct-msg';
+        msg.textContent = '';
+
+        var name = document.getElementById('ct-name').value.trim();
+        var email = document.getElementById('ct-email').value.trim();
+        var company = document.getElementById('ct-company').value.trim();
+        var linkedin = document.getElementById('ct-linkedin').value.trim();
+        var subject = document.getElementById('ct-subject').value;
+        var message = document.getElementById('ct-message').value.trim();
+
+        if (!name || name.split(/\s+/).length < 2) { showErr('Please enter your first and last name.'); return; }
+        if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { showErr('Please enter a valid email address.'); return; }
+        if (!company) { showErr('Please enter your company name.'); return; }
+        if (!message) { showErr('Please tell us a bit about what brought you here.'); return; }
+
+        var parts = name.split(/\s+/);
+        var firstname = parts.shift() || '';
+        var lastname = parts.join(' ');
+        var fullMessage = '[' + subject + ']' + (linkedin ? ' LinkedIn: ' + linkedin + ' — ' : ' ') + message;
+
+        var fields = [
+          { name: 'firstname', value: firstname },
+          { name: 'email', value: email },
+          { name: 'message', value: fullMessage }
+        ];
+        fields.push({ name: 'lastname', value: lastname });
+        fields.push({ name: 'company', value: company });
+
+        var btn = form.querySelector('.ct-submit');
+        btn.disabled = true;
+
+        fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            fields: fields,
+            context: { pageUri: window.location.href, pageName: document.title }
+          })
+        }).then(function(r){
+          if (!r.ok) throw new Error('submit failed');
+          form.reset();
+          msg.textContent = "Thanks — we received your message and will be in touch shortly.";
+          msg.classList.add('ok');
+        }).catch(function(){
+          showErr("That didn't go through. Check your connection and try again, or email us directly.");
+        }).finally(function(){ btn.disabled = false; });
+      });
+
+      function showErr(t){ msg.textContent = t; msg.classList.add('err'); }
+    })();
+  </script>
 </body>
 </html>

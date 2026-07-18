@@ -10,11 +10,12 @@
   <!-- End Google Tag Manager -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About Us | The WhiteRock Group | Revenue Value Creation™</title>
-  <meta name="description" content="The WhiteRock Group is a human-first, culture-led firm built to last. Meet the team behind Revenue Value Creation™ — partnering with founders and PE firms across Dallas and beyond.">
+  <title>About Us | The WhiteRock Group</title>
+  <meta name="description" content="The WhiteRock Group is a human-first, culture-led firm built to last. Meet the team behind Revenue Value Creation — partnering with founders and PE firms across Dallas and beyond.">
+  <meta name="author" content="The WhiteRock Group">
   <link rel="canonical" href="https://thewhiterockgroup.co/about/">
   <meta property="og:title" content="About Us | The WhiteRock Group">
-  <meta property="og:description" content="The WhiteRock Group is a human-first, culture-led firm built to last. Meet the team behind Revenue Value Creation™ — partnering with founders and PE firms across Dallas and beyond.">
+  <meta property="og:description" content="The WhiteRock Group is a human-first, culture-led firm built to last. Meet the team behind Revenue Value Creation.">
   <meta property="og:url" content="https://thewhiterockgroup.co/about/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://thewhiterockgroup.co/assets/logo-dark.png">
@@ -22,8 +23,8 @@
   <link rel="icon" href="../assets/favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=20260717c">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-39KHHYPNS4"></script>
@@ -33,339 +34,509 @@
     gtag('js', new Date());
     gtag('config', 'G-39KHHYPNS4');
   </script>
+
+  <style>
+    /* ═══════════════════════════════════════════
+       ABOUT PAGE — EDITORIAL / MINIMALIST
+    ═══════════════════════════════════════════ */
+
+    .ab-inner {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 48px;
+    }
+
+    .ab-narrow {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* ── Hero (dark) ── */
+    .ab-hero {
+      background: #1D1D1B;
+      color: #F4F2EC;
+      padding: clamp(160px, 18vw, 240px) 0 clamp(64px, 8vw, 96px);
+    }
+
+    .ab-hero-eyebrow {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7C7B76;
+      margin-bottom: 32px;
+    }
+
+    .ab-hero h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2.75rem, 5vw, 4.5rem);
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: #F4F2EC;
+      max-width: 700px;
+      margin-bottom: 24px;
+    }
+
+    .ab-hero-sub {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #7C7B76;
+      max-width: 440px;
+    }
+
+    /* ── Story (warm white, two columns) ── */
+    .ab-story {
+      background: #F4F2EC;
+      padding: clamp(80px, 10vw, 140px) 0;
+    }
+
+    .ab-story-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    @media (min-width: 768px) {
+      .ab-story-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
+      }
+    }
+
+    .ab-story-col p {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.8;
+      color: #3A3A38;
+      margin-bottom: 20px;
+    }
+
+    .ab-story-col p:last-child { margin-bottom: 0; }
+
+    /* ── Values (warm white, numbered) ── */
+    .ab-values {
+      background: #F4F2EC;
+      padding: 0 0 clamp(80px, 10vw, 140px);
+    }
+
+    .ab-values-eyebrow {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #7C7B76;
+      margin-bottom: 64px;
+    }
+
+    .ab-value {
+      padding: 48px 0;
+    }
+
+    .ab-value + .ab-value {
+      border-top: 1px solid #D9D6CD;
+    }
+
+    .ab-value-num {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      color: #7C7B76;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .ab-value h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      line-height: 1.2;
+      letter-spacing: -0.01em;
+      color: #1D1D1B;
+      margin-bottom: 16px;
+    }
+
+    .ab-value p {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #5C5A55;
+      max-width: 600px;
+    }
+
+    /* ── Pull Quote (dark) ── */
+    .ab-quote {
+      background: #1D1D1B;
+      padding: clamp(80px, 10vw, 140px) 0;
+      text-align: center;
+    }
+
+    .ab-quote blockquote {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-style: italic;
+      font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+      line-height: 1.4;
+      color: #F4F2EC;
+      max-width: 640px;
+      margin: 0 auto 24px;
+    }
+
+    .ab-quote cite {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 13px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: 0.05em;
+      color: #7C7B76;
+    }
+
+    /* ── FAQ (warm white) ── */
+    .ab-faq {
+      background: #F4F2EC;
+      padding: clamp(80px, 10vw, 140px) 0;
+    }
+
+    .ab-faq-heading {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 3vw, 2.75rem);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      color: #1D1D1B;
+      margin-bottom: 64px;
+      text-align: center;
+    }
+
+    .ab-faq-item {
+      padding: 32px 0;
+      border-top: 1px solid #D9D6CD;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    @media (min-width: 768px) {
+      .ab-faq-item {
+        grid-template-columns: 1fr 1.5fr;
+        gap: 64px;
+      }
+    }
+
+    .ab-faq-item:last-child {
+      border-bottom: 1px solid #D9D6CD;
+    }
+
+    .ab-faq-item h4 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 1.25;
+      color: #1D1D1B;
+    }
+
+    .ab-faq-item p {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #5C5A55;
+    }
+
+    /* ── CTA (dark with grid) ── */
+    .ab-cta {
+      background: #1D1D1B;
+      padding: clamp(96px, 12vw, 160px) 0;
+      text-align: center;
+      background-image:
+        linear-gradient(rgba(244,242,236,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(244,242,236,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+
+    .ab-cta h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      line-height: 1.15;
+      color: #F4F2EC;
+      margin-bottom: 24px;
+    }
+
+    .ab-cta p {
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: #7C7B76;
+      margin-bottom: 48px;
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .ab-cta-btn {
+      display: inline-block;
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      padding: 14px 32px;
+      background: #F4F2EC;
+      color: #1D1D1B;
+      text-decoration: none;
+      border-radius: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .ab-cta-btn:hover { opacity: 0.8; }
+
+    /* ── Journal section ── */
+    .ab-journal {
+      background: #F4F2EC;
+      padding: clamp(64px, 8vw, 96px) 0 clamp(80px, 10vw, 128px);
+    }
+
+  </style>
 </head>
-<body>
+<body class="page-about">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5876HGC3"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
 
-  <!-- ═══════════════════════════════════════════
-       HEADER
-  ═══════════════════════════════════════════ -->
-  <header class="header-dark-bg">
+  <header>
     <div class="page-inner header-inner">
-      <a href="../" class="nav-logo" aria-label="The WhiteRock Group">
-        <img src="../assets/logo-dark.png" alt="The WhiteRock Group" style="height:22px;width:auto;display:block;">
+      <a href="../index.html" class="nav-logo" aria-label="The WhiteRock Group">
+        <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:22px;width:auto;display:block;">
       </a>
-      <button id="menu-btn" class="menu-btn menu-btn--dark" aria-controls="slide-nav" aria-haspopup="true" aria-expanded="false">
+      <ul class="nav-links">
+        <li><a href="../about/index.html">About Us</a></li>
+        <li><a href="../services/index.html">Services</a></li>
+        <li class="nav-dropdown"><a href="../industries/index.html">Industries</a>
+          <div class="nav-dropdown-menu">
+            <a href="../industries/law-firms/index.html">Law Firms</a>
+          </div>
+        </li>
+        <li><a href="../partners.html">Partners</a></li>
+        <li><a href="../journal/index.html">Journal</a></li>
+      </ul>
+      <a href="../contact/index.html" class="nav-cta">CONTACT US</a>
+      <button id="menu-btn" class="menu-btn" aria-controls="slide-nav" aria-haspopup="true" aria-expanded="false">
         Menu
       </button>
     </div>
   </header>
 
-  <!-- Slide-out nav overlay -->
   <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
-
-  <!-- Slide-out nav panel -->
   <nav id="slide-nav" class="slide-nav" aria-label="Main navigation">
-    <a href="../" style="display:block;margin-bottom:48px;" aria-label="The WhiteRock Group home">
+    <a href="../index.html" style="display:block;margin-bottom:48px;" aria-label="The WhiteRock Group home">
       <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:18px;width:auto;">
     </a>
     <ul>
-      <li><a href="../services/">Services</a></li>
-      <li><a href="../">Work</a></li>
-      <li><a href="../about/">About</a></li>
-      <li><a href="../journal/">Journal</a></li>
-      <li><a href="../partners/">Partners</a></li>
-      <li><a href="../contact/">Contact</a></li>
+      <li><a href="../about/index.html">About Us</a></li>
+      <li><a href="../services/index.html">Services</a></li>
+      <li><a href="../industries/index.html">Industries</a></li>
+      <li><a href="../partners.html">Partners</a></li>
+      <li><a href="../journal/index.html">Journal</a></li>
+      <li><a href="../contact/index.html">Contact Us</a></li>
     </ul>
     <div class="slide-nav-footer">
-      <a href="mailto:hello@whiterockgroup.com">hello@whiterockgroup.com</a>
+      <p class="slide-nav-follow-label">Follow</p>
+      <div class="slide-nav-socials">
+        <a href="https://www.linkedin.com/company/thewhiterockgroup" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </div>
   </nav>
 
 
   <main>
 
-    <!-- ═══════════════════════════════════════════
-         HERO + STORY — WHITE BACKGROUND
-    ═══════════════════════════════════════════ -->
-    <section class="about-top">
-      <div class="page-inner">
+    <!-- ═══ HERO ═══ -->
+    <section class="ab-hero">
+      <div class="ab-inner">
+        <p class="ab-hero-eyebrow">About Us</p>
+        <h1>We have a few ground rules at The WhiteRock Group.*</h1>
+        <p class="ab-hero-sub">*Nothing groundbreaking. Just the things that keep us honest.</p>
+      </div>
+    </section>
 
-        <!-- H1 -->
-        <h1 class="about-top-h1">We step onto the field with companies built for more.</h1>
 
-        <!-- Divider -->
-        <hr class="about-top-divider">
-
-        <!-- 3-column story grid -->
-        <div class="about-top-grid">
-
-          <!-- Col 1: first paragraphs -->
-          <div class="about-top-col">
-            <p>The WhiteRock Group was founded in 2015 in Dallas, Texas. Since then, our work, partnerships, and lessons learned have brought the world to our doorstep, allowing us to create impact on a global scale.</p>
-
-            <p>In 2015, Facebook, now Meta, asked us to support work tied to its MAU — monthly active users — North Star mission. That partnership reaffirmed the impact we wanted to have and the belief that still guides us today: The technology is not <em>the</em> thing — the customer experience is. We were helping reimagine and add value to a global brand, and that work helped shape the core values we still hold today. That partnership went well, so we kept going.</p>
-
-            <p>Next, we partnered with HubSpot to envision, scale, and grow CRM service offerings that helped founders and teams become stronger go-to-market operators. Today, HubSpot serves more than 288,000 customers in over 135 countries — a reminder of what happens when technology, customer experience, and go-to-market execution work together.</p>
-
-            <p>Over time, we saw the same pattern repeat across founders, operators, and investors: growth creates complexity. Sales gets disconnected from operations. Technology gets implemented without adoption. Customer experience becomes fragmented. Teams move fast, but not always together.</p>
+    <!-- ═══ OUR STORY ═══ -->
+    <section class="ab-story">
+      <div class="ab-inner">
+        <div class="ab-story-grid">
+          <div class="ab-story-col">
+            <p>The WhiteRock Group was founded in 2015 in Dallas, Texas. In 2015, Facebook, now Meta, asked us to support work tied to its MAU North Star mission. That partnership reaffirmed the belief that still guides us today: The technology is not the thing — the customer experience is.</p>
+            <p>Next, we partnered with HubSpot to envision, scale, and grow CRM service offerings that helped founders and teams become stronger go-to-market operators. Today, HubSpot serves more than 288,000 customers in over 135 countries.</p>
           </div>
-
-          <!-- Col 2: remaining paragraphs -->
-          <div class="about-top-col">
-            <p>We started the private equity division of The WhiteRock Group to provide Revenue Value Creation™ for private equity groups and founder-led brands by bridging due diligence, integrations, and enablement under one roof. We help create value for companies preparing for growth, integrating after investment, professionalizing the revenue engine, or building a more valuable business before exit.</p>
-
-            <p>Today, we span two continents with a tight-knit team and a network of world-class experts. With decades of experience creating, designing, growing, and connecting world-class brands and businesses, we are not afraid to venture past the expected. We have been there through the good and the bad, the successes and the failures. We have taken those lessons and built them into how we serve our partners today.</p>
-
-            <p>We are doers, makers, thinkers, and partners empowering businesses to create brands that shape the future.</p>
-
-            <p>Let's peer over the horizon together.</p>
+          <div class="ab-story-col">
+            <p>Over time, we saw the same pattern repeat: growth creates complexity. Sales gets disconnected from operations. Technology gets implemented without adoption. Customer experience becomes fragmented.</p>
+            <p>We started the private equity division to provide Revenue Value Creation for PE groups and founder-led brands by bridging due diligence, integrations, and enablement under one roof. Today, we span two continents with a tight-knit team and a network of world-class experts.</p>
           </div>
-
-          <!-- Col 3: stacked CTA buttons -->
-          <div class="about-top-btns">
-            <a href="../contact/" class="btn-pill btn-pill--outline-dark">Contact Us</a>
-          </div>
-
         </div>
       </div>
     </section>
 
 
-    <!-- ═══════════════════════════════════════════
-         OUR STORY — VIDEO SECTION (from homepage)
-    ═══════════════════════════════════════════ -->
-    <section class="our-story" aria-label="Our story">
-      <div class="our-story-grid">
+    <!-- ═══ VALUES (numbered, Warby Parker style) ═══ -->
+    <section class="ab-values">
+      <div class="ab-inner">
+        <p class="ab-values-eyebrow">What We Stand On</p>
 
-        <div class="our-story-video-col">
-          <video
-            id="about-video"
-            class="our-story-video"
-            src="https://jm-2021-prod.s3.us-west-1.amazonaws.com/About_video_4b5a6c7a63.webm"
-            muted playsinline loop
-          ></video>
+        <div class="ab-value">
+          <span class="ab-value-num">01</span>
+          <h3>Be so good they talk about you at the dinner table.</h3>
+          <p>We do not aim to simply satisfy clients. We aim to create the kind of value, trust, and transformation that gets talked about when we are not in the room. Value comes first. The client is the hero. The process is not the thing — the customer outcome is.</p>
         </div>
 
-        <div class="our-story-text-col">
-          <p class="our-story-eyebrow">Our Story</p>
-          <h2 class="our-story-h2">Human-first.<br>Culture-led.<br>Built to last.</h2>
-          <p class="our-story-body">
-            Founded in 2015 in Dallas, Texas, The WhiteRock Group was built on the belief that technology is not the thing — the customer experience is. From early partnerships with global brands like Facebook, now Meta, and HubSpot, we learned that lasting growth is not created by tools alone, but by aligning strategy, systems, revenue, operations, culture, and customer experience around what matters most. Today, we provide Revenue Value Creation™ for founders, private equity firms, and B2B service companies preparing for growth, integrating after investment, professionalizing the revenue engine, or building a more valuable business before exit. We are doers, makers, thinkers, and partners who step onto the field with companies built for more — helping them create brands, systems, and experiences that shape the future.
-          </p>
+        <div class="ab-value">
+          <span class="ab-value-num">02</span>
+          <h3>Built different on purpose.</h3>
+          <p>We believe in simple, but not simplistic. Strategy, revenue operations, sales enablement, brand, customer experience, and leadership alignment — all under one roof. Because growth is connected, and the firms that treat it that way win.</p>
+        </div>
+
+        <div class="ab-value">
+          <span class="ab-value-num">03</span>
+          <h3>High standards are contagious.</h3>
+          <p>Culture is not what we say. Culture is what we tolerate, repeat, reward, and protect. We admire the people we hire. We defend against complacency, bureaucracy, and "Day 2" thinking. Talent is worth over-investing in.</p>
+        </div>
+
+        <div class="ab-value">
+          <span class="ab-value-num">04</span>
+          <h3>Pressure is a privilege.</h3>
+          <p>Our team comes from professional sports, private equity, revenue leadership, brand building, NASA, operations, and entrepreneurship. We think clearly. We move deliberately. We operate with intention. Founders choose us for the consistency of our people, our process, and our standard.</p>
         </div>
 
       </div>
     </section>
 
 
-    <!-- ═══════════════════════════════════════════
-         OUR VALUES — white bg, row layout
-    ═══════════════════════════════════════════ -->
-    <section class="values-section">
-      <div class="page-inner">
-        <p class="values-eyebrow">Our Values</p>
-        <ol class="values-list">
-
-          <li class="values-item">
-            <div class="values-left">
-              <span class="values-num">1</span>
-              <h3>Be So Good They Talk About You<br>at the Dinner Table</h3>
-            </div>
-            <div class="values-desc">
-              <p>We do not aim to simply satisfy clients. We aim to create the kind of value, trust, and transformation that gets talked about when we are not in the room.</p>
-              <p class="values-believe">We believe</p>
-              <ul>
-                <li>Value comes first.</li>
-                <li>The client is the hero.</li>
-                <li>Long-term customer loyalty is our bedrock.</li>
-                <li>The process is not the thing — the customer outcome is.</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="values-item">
-            <div class="values-left">
-              <span class="values-num">2</span>
-              <h3>Built Different on Purpose</h3>
-            </div>
-            <div class="values-desc">
-              <p>We believe in simple, but not simplistic. That is why we bring strategy, revenue operations, sales enablement, brand, customer experience, and leadership alignment under one roof.</p>
-              <p class="values-believe">We believe</p>
-              <ul>
-                <li>Leadership is in our DNA, not just a service.</li>
-                <li>We bring more under one roof because growth is connected.</li>
-                <li>Repetition is persuasive.</li>
-                <li>Operational excellence is how great customer experiences become consistent.</li>
-              </ul>
-            </div>
-          </li>
-
-          <li class="values-item">
-            <div class="values-left">
-              <span class="values-num">3</span>
-              <h3>High Standards Are Contagious</h3>
-            </div>
-            <div class="values-desc">
-              <p>Culture is not what we say. Culture is what we tolerate, repeat, reward, and protect.</p>
-              <p class="values-believe">We believe</p>
-              <ul>
-                <li>High standards spread like a virus.</li>
-                <li>Talent is worth over-investing in.</li>
-                <li>We admire the people we hire.</li>
-                <li>We defend against complacency, bureaucracy, and "Day 2" thinking.</li>
-              </ul>
-            </div>
-          </li>
-
-        </ol>
+    <!-- ═══ PULL QUOTE ═══ -->
+    <section class="ab-quote">
+      <div class="ab-narrow">
+        <blockquote>Our customers, our clients, our partners, and our people are our stakeholders. We consider them in every decision that we make.</blockquote>
+        <cite>The WhiteRock Group</cite>
       </div>
     </section>
 
 
+    <!-- ═══ FAQ ═══ -->
+    <section class="ab-faq">
+      <div class="ab-inner">
+        <h2 class="ab-faq-heading">Got questions? We can probably answer them.</h2>
 
-
-    <!-- ═══════════════════════════════════════════
-         CURIOUS SECTION
-    ═══════════════════════════════════════════ -->
-    <section class="curious-section">
-      <div class="page-inner">
-        <div class="curious-inner">
-          <h2 class="curious-h2">Built With Partners Who Raise the Standard</h2>
-          <p class="curious-body">The work we do requires trust, depth, and world-class execution. That is why we are intentional about the partners we bring into our ecosystem — people and firms who help us create more value for founders, private equity firms, and B2B service companies.</p>
-          <a href="../partners/" class="btn-pill">Explore our Partners</a>
+        <div class="ab-faq-item">
+          <h4>Where does the name "WhiteRock" come from?</h4>
+          <p>White Rock Lake in Dallas, Texas. It is where the company was conceived — a place where founders go to think, run, and plan what comes next. The name is a reminder that the best ideas start with clarity and space.</p>
         </div>
+
+        <div class="ab-faq-item">
+          <h4>What does "Revenue Value Creation" mean?</h4>
+          <p>It means aligning every revenue-facing system — brand, sales, operations, technology, customer experience — so they compound into enterprise value, not just top-line growth. It is the difference between revenue that looks good on a dashboard and revenue that holds up under diligence.</p>
+        </div>
+
+        <div class="ab-faq-item">
+          <h4>Who do you work with?</h4>
+          <p>Founders, private equity firms, and B2B service companies between $1M and $50M in revenue. Typically at a growth inflection — preparing for investment, integrating after acquisition, or professionalizing the revenue engine before exit.</p>
+        </div>
+
+        <div class="ab-faq-item">
+          <h4>Where are you based?</h4>
+          <p>Dallas, Texas. But we work across two continents with a distributed team and a network of world-class partners. The work goes where the clients are.</p>
+        </div>
+
       </div>
     </section>
 
 
-    <!-- ═══════════════════════════════════════════
-         FROM THE JOURNAL
-    ═══════════════════════════════════════════ -->
-    <section class="news-section about-journal-section">
-      <div class="page-inner">
-        <h2><a href="../journal/">From the journal</a></h2>
-        <div class="news-grid">
+    <!-- ═══ JOURNAL ═══ -->
+    <section class="ab-journal">
+      <div class="ab-inner" style="max-width:1120px;">
+        <p class="hp-journal-eyebrow">From the Journal</p>
+        <div class="hp-journal-grid">
 
-          <article class="news-card">
-            <div class="news-card-media">
-              <a href="https://whoisjosephmark.medium.com/rca-records-re-brand-making-noise-with-alex-naghavi-b70dd529e440" target="_blank" rel="noopener" style="display:contents;">
-                <img src="https://cdn.josephmark.studio/eyJidWNrZXQiOiJqbS0yMDIxLXByb2QiLCJrZXkiOiJTaGFyZV9JbWFnZV9hODE2NThmOGNiLmpwZyIsImVkaXRzIjp7InJlc2l6ZSI6eyJ3aWR0aCI6MjU2MH19fQ==" alt="RCA Records Brand Refresh" loading="lazy">
-              </a>
-            </div>
-            <p class="news-card-eyebrow">Journal</p>
-            <h3>RCA Records Brand Refresh: Making noise with Alex Naghavi</h3>
-            <a class="news-card-link" href="https://whoisjosephmark.medium.com/rca-records-re-brand-making-noise-with-alex-naghavi-b70dd529e440" target="_blank" rel="noopener">Read more</a>
+          <article class="hp-journal-card">
+            <a href="../journal/frontline-focus/index.html" class="hp-journal-card-link">
+              <div class="hp-journal-card-img">
+                <img src="../assets/journal-frontline-hero.jpg" alt="Frontline Focus" loading="lazy">
+              </div>
+              <span class="hp-journal-tag">Article</span>
+              <h3>Why the Best Founder-Led Companies Never Lose Sight of the Frontline</h3>
+              <p>Bain's research attributes the 2.1x total shareholder return advantage of founder-led companies to three operating principles.</p>
+              <span class="hp-journal-read">Read more →</span>
+            </a>
           </article>
 
-          <article class="news-card">
-            <div class="news-card-media">
-              <a href="https://whoisjosephmark.medium.com/why-venturing-with-josephmark-is-the-smartest-move-for-your-startup-2289c6e89c2c" target="_blank" rel="noopener" style="display:contents;">
-                <img src="https://cdn.josephmark.studio/eyJidWNrZXQiOiJqbS0yMDIxLXByb2QiLCJrZXkiOiIxX1NUX1l5OF9UYXFfWHdfSHNfS19BY3VoX1Zkcl9MZ180OWNiMjRjNTQxLmpwZWciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI1NjB9fX0=" alt="Why venturing with Josephmark" loading="lazy">
-              </a>
-            </div>
-            <p class="news-card-eyebrow">Journal</p>
-            <h3>Why venturing with Josephmark is the smartest move for your startup</h3>
-            <a class="news-card-link" href="https://whoisjosephmark.medium.com/why-venturing-with-josephmark-is-the-smartest-move-for-your-startup-2289c6e89c2c" target="_blank" rel="noopener">Read more</a>
+          <article class="hp-journal-card">
+            <a href="../journal/index.html" class="hp-journal-card-link">
+              <div class="hp-journal-card-img"><div class="hp-journal-placeholder"></div></div>
+              <span class="hp-journal-tag">Insights</span>
+              <h3>Inside Our GTM Framework: Behind the WR.G Strategy Build</h3>
+              <p>How we think about designing and building GTM strategy systems for founders and PE-backed teams.</p>
+              <span class="hp-journal-read">Read more →</span>
+            </a>
           </article>
 
-          <article class="news-card">
-            <div class="news-card-media">
-              <a href="https://amp.couriermail.com.au/lifestyle/qweekend/digits-in-the-dirt/news-story/d577b5ad7c56c8c458ea59ce7597d715" target="_blank" rel="noopener" style="display:contents;">
-                <img src="https://cdn.josephmark.studio/eyJidWNrZXQiOiJqbS0yMDIxLXByb2QiLCJrZXkiOiJTY3JlZW5fU2hvdF8yMDIyXzAyXzA0X2F0XzNfMzBfNDRfcG1fM2RkYWUwNjM2NS5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI1NjB9fX0=" alt="Digits in the dirt" loading="lazy">
-              </a>
-            </div>
-            <p class="news-card-eyebrow">Journal</p>
-            <h3>Digits in the dirt — the story of Josephmark's family farm</h3>
-            <a class="news-card-link" href="https://amp.couriermail.com.au/lifestyle/qweekend/digits-in-the-dirt/news-story/d577b5ad7c56c8c458ea59ce7597d715" target="_blank" rel="noopener">Read more</a>
+          <article class="hp-journal-card">
+            <a href="../journal/index.html" class="hp-journal-card-link">
+              <div class="hp-journal-card-img"><div class="hp-journal-placeholder"></div></div>
+              <span class="hp-journal-tag">Signals</span>
+              <h3>Brand Narrative Fundamentals: What it Takes to Make Your Story Stick</h3>
+              <p>Your brand narrative is your most powerful tool for building relationships and influencing.</p>
+              <span class="hp-journal-read">Read more →</span>
+            </a>
           </article>
 
         </div>
+      </div>
+    </section>
+
+
+    <!-- ═══ CTA ═══ -->
+    <section class="site-cta">
+      <div class="site-cta-inner">
+        <h2 class="site-cta-heading">Gain the Confidence to <span class="site-cta-cycle" id="cta-cycle-text"></span><span class="site-cta-cursor" aria-hidden="true"></span></h2>
+        <a href="../contact/index.html" class="site-cta-btn">Get in touch</a>
       </div>
     </section>
 
   </main>
 
 
-  <!-- ═══════════════════════════════════════════
-       FOOTER
-  ═══════════════════════════════════════════ -->
   <footer>
-    <div class="page-inner">
-
-      <div class="footer-grid">
-
-        <!-- Contact -->
-        <div>
-          <p class="footer-contact-label">Contact Us</p>
-          <p class="footer-tagline">Let's peer over the horizon together</p>
-          <a class="footer-email" href="mailto:info@whiterockconsultingco.com">info@whiterockconsultingco.com</a>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <a href="../index.html" aria-label="The WhiteRock Group">
+          <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:22px;width:auto;opacity:0.8;">
+        </a>
+        <a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener" class="footer-social-link" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+      <div class="footer-bottom-row">
+        <div class="footer-copyright">
+          &copy; 2026 The WhiteRock Group<br>All rights reserved
         </div>
-
-        <!-- Nav columns -->
-        <div class="footer-nav-cols">
-          <div>
-            <p>WR.G</p>
-            <ul>
-              <li><a href="../services/">Services</a></li>
-              <li><a href="../">Work</a></li>
-              <li><a href="../about/">About</a></li>
-              <li><a href="../partners/">Partners</a></li>
-              <li><a href="../contact/">Contact</a></li>
-            </ul>
+        <div class="footer-right">
+          <div class="footer-nav-row">
+            <a href="../about/index.html">About</a>
+            <a href="../services/index.html">Services</a>
+            <a href="../partners.html">Partners</a>
+            <a href="../contact/index.html">Contact</a>
           </div>
-          <div>
-            <p>More</p>
-            <ul>
-              <li><a href="../journal/">Journal</a></li>
-              <li><a href="../partners/">Partners</a></li>
-              <li><a href="../faq/">FAQs</a></li>
-            </ul>
-          </div>
-          <div>
-            <p>Follow</p>
-            <ul>
-              <li><a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener">LinkedIn</a></li>
-              <li><a href="https://www.instagram.com/thewhiterockgroup/" target="_blank" rel="noopener">Instagram</a></li>
-              <li><a href="https://open.spotify.com/user/nya1o2vhaddlb4vvhm9b5kr8k" target="_blank" rel="noopener">Spotify</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Mailing list -->
-        <div class="footer-mailing">
-          <form id="mailing-form" novalidate>
-            <label for="footer-email-input">Signals for Founders</label>
-            <div class="footer-email-wrap">
-              <input
-                id="footer-email-input"
-                type="email"
-                name="email"
-                class="footer-input"
-                placeholder="Your email"
-                required
-                autocomplete="email"
-              >
-              <button type="submit" class="footer-submit" aria-label="Join mailing list">
-                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true">
-                  <path d="M3 9h12M10 4l5 5-5 5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </button>
-            </div>
-          </form>
-        </div>
-
-      </div><!-- /.footer-grid -->
-
-      <!-- Footer bottom legal -->
-      <div class="footer-bottom">
-        <p class="footer-legal">
-          The WhiteRock Group is a proudly inclusive organisation and an active firm in the local community and support movements toward equality.
-        </p>
-
-        <div></div>
-        <div style="text-align:left;">
-          <img src="../assets/logo-white.png" alt="The WhiteRock Group" style="height:16px;width:auto;opacity:0.5;margin-bottom:12px;">
-          <p class="footer-legal">© The WhiteRock Group 2026<br>All rights reserved.</p>
+          <p class="footer-location">Dallas, TX</p>
         </div>
       </div>
-
     </div>
   </footer>
 
-  <script src="../js/main.js"></script>
+  <script src="../js/main.js?v=20260717c"></script>
 </body>
 </html>

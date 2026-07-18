@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuBtn = document.getElementById('menu-btn');
   const slideNav = document.getElementById('slide-nav');
   const navOverlay = document.getElementById('nav-overlay');
+  const menuBtnIcon = menuBtn.innerHTML;
   let menuOpen = false;
 
   function openMenu() {
@@ -43,12 +44,13 @@ document.addEventListener('DOMContentLoaded', () => {
     menuOpen = false;
     slideNav.classList.remove('open');
     navOverlay.classList.remove('open');
-    menuBtn.textContent = 'Menu';
+    menuBtn.innerHTML = menuBtnIcon;
     document.body.style.overflow = '';
   }
 
   menuBtn.addEventListener('click', () => menuOpen ? closeMenu() : openMenu());
   navOverlay.addEventListener('click', closeMenu);
+  slideNav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && menuOpen) closeMenu();
@@ -117,6 +119,21 @@ document.addEventListener('DOMContentLoaded', () => {
   fadeTargets.forEach(el => fadeObserver.observe(el));
 
 
+  // ── SCROLL REVEAL — .reveal elements + home CTA section ──
+  const revealTargets = document.querySelectorAll('.reveal, .home-cta');
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  revealTargets.forEach(el => revealObserver.observe(el));
+
+
   // ── NEWS VIDEOS — autoplay when in viewport ───────────────
   document.querySelectorAll('.news-card-media video, .news-card-media img').forEach(media => {
     const io = new IntersectionObserver((entries) => {
@@ -166,6 +183,42 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── SUBSCRIBE PILLS (insights hero + light footer) ────────
+  document.querySelectorAll('form.ins-sub-form, form.footer-ins-form').forEach((form) => {
+    if (form.dataset.wired) return;
+    form.dataset.wired = '1';
+    const msg = form.parentElement.querySelector('.ins-sub-msg');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const input = form.querySelector('input[type="email"]');
+      const email = (input.value || '').trim();
+      if (msg) msg.className = 'ins-sub-msg';
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+        if (msg) {
+          msg.textContent = 'Please enter a valid email address — like name@company.com.';
+          msg.classList.add('err');
+        }
+        input.focus();
+        return;
+      }
+      const btn = form.querySelector('button');
+      btn.disabled = true;
+      submitToHubSpot(email).then((r) => {
+        if (!r.ok) throw new Error('submit failed');
+        form.reset();
+        if (msg) {
+          msg.textContent = "You're subscribed. Watch your inbox for the next issue.";
+          msg.classList.add('ok');
+        }
+      }).catch(() => {
+        if (msg) {
+          msg.textContent = "That didn't go through. Check your connection and try again.";
+          msg.classList.add('err');
+        }
+      }).finally(() => { btn.disabled = false; });
+    });
+  });
+
   // Contact page inline newsletter
   const contactNewsletterBtn   = document.getElementById('contact-newsletter-btn');
   const contactNewsletterInput = document.getElementById('contact-newsletter-input');
@@ -175,5 +228,6 @@ document.addEventListener('DOMContentLoaded', () => {
       submitToHubSpot(contactNewsletterInput.value).finally(() => showSuccess(contactNewsletterBtn, contactNewsletterInput));
     });
   }
+
 
 });

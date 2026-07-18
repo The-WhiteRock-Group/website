@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Insights | The WhiteRock Group</title>
+  <meta name="description" content="Strategic intelligence for operators and leaders. The WhiteRock Group breaks down the convergence of capital, operations, and leadership — and what it means for revenue and value creation.">
+  <meta name="author" content="The WhiteRock Group">
+  <link rel="canonical" href="https://thewhiterockgroup.co/insights/">
+
+  <meta property="og:title" content="Insights | The WhiteRock Group">
+  <meta property="og:description" content="Strategic intelligence for operators and leaders — capital, operations, and leadership, decoded.">
+  <meta property="og:url" content="https://thewhiterockgroup.co/insights/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://thewhiterockgroup.co/assets/wrg-hero-poster.jpg">
+  <meta property="og:image:alt" content="The WhiteRock Group — Insights">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Insights | The WhiteRock Group">
+  <meta name="twitter:description" content="Strategic intelligence for operators and leaders — capital, operations, and leadership, decoded.">
+  <meta name="twitter:image" content="https://thewhiterockgroup.co/assets/wrg-hero-poster.jpg">
+
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200..700&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=20260717c">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-39KHHYPNS4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-39KHHYPNS4');
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "The WhiteRock Group Insights",
+    "url": "https://thewhiterockgroup.co/insights/",
+    "description": "Strategic intelligence for operators and leaders: revenue operations, value creation, and go-to-market strategy.",
+    "publisher": { "@type": "Organization", "name": "The WhiteRock Group", "url": "https://thewhiterockgroup.co" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://thewhiterockgroup.co/" },
+      { "@type": "ListItem", "position": 2, "name": "Insights", "item": "https://thewhiterockgroup.co/insights/" }
+    ]
+  }
+  </script>
+
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    .ins-page{background:#F2F6FA;color:#162029;min-height:100vh;}
+
+    header{position:static;background:#162029;padding:16px 0;color:#fff;pointer-events:auto;}
+    .nav-link{color:rgba(255,255,255,0.7);}
+    .nav-link:hover{color:#fff;}
+    .nav-link--dropdown::after{border-right-color:rgba(255,255,255,0.7);border-bottom-color:rgba(255,255,255,0.7);}
+    .menu-btn{color:#fff;}
+
+    .ins-wrap{max-width:var(--max-w);margin:0 auto;padding:0 clamp(24px,6vw,120px);}
+
+    .ins-reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(0.25,1,0.5,1),transform .7s cubic-bezier(0.25,1,0.5,1);}
+    .ins-reveal.in{opacity:1;transform:translateY(0);}
+    @media(prefers-reduced-motion:reduce){.ins-reveal{opacity:1;transform:none;transition:none;}}
+
+    /* ══ 1. HERO — centered, subscribe pill ══ */
+    .ins-hero{padding:clamp(16px,2vw,30px) 0 clamp(72px,9vw,120px);text-align:left;}
+    .ins-h1{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:clamp(4rem,calc(0.44rem + 15.2vw),14.125rem);line-height:1;letter-spacing:-0.04em;
+      color:#162029;margin:0 0 clamp(64px,8.5vw,122px);
+    }
+    .ins-hero-sub{
+      font-family:'Inter',sans-serif;font-weight:450;
+      font-size:clamp(1.5rem,calc(1.256rem + 1.033vw),2.1875rem);line-height:1.2;letter-spacing:-0.02em;
+      color:#162029;max-width:772px;margin:0 0 clamp(36px,4vw,52px);text-wrap:pretty;
+    }
+    .ins-sub-form{
+      display:flex;align-items:center;max-width:500px;margin:0;
+      background:#fff;border:1px solid #162029;border-radius:0;
+      padding:5px 5px 5px 24px;
+    }
+    .ins-sub-input{
+      flex:1;min-width:0;border:0;outline:0;background:transparent;
+      font-family:'Inter',sans-serif;font-size:1rem;color:#162029;padding:10px 8px 10px 0;
+    }
+    .ins-sub-input::placeholder{color:rgba(22,32,41,0.55);}
+    .ins-sub-btn{
+      flex:none;width:44px;height:44px;border-radius:0;border:0;cursor:pointer;
+      background:#162029;color:#fff;display:flex;align-items:center;justify-content:center;
+      transition:background .2s;
+    }
+    .ins-sub-btn:hover{background:#c9de6b;}
+    .ins-sub-msg{
+      font-family:'Inter',sans-serif;font-size:0.875rem;margin:14px 0 0;max-width:500px;display:none;
+    }
+    .ins-sub-msg.ok{display:block;color:#162029;}
+    .ins-sub-msg.err{display:block;color:#b3261e;}
+
+    /* ══ 2. ARTICLES GRID ══ */
+    .ins-articles{padding:0 0 clamp(88px,10vw,140px);}
+    .ins-articles-h2{
+      font-family:'Inter',sans-serif;font-weight:500;
+      font-size:clamp(1.5rem,2.2vw,2rem);line-height:1.2;letter-spacing:-0.03em;
+      color:#162029;margin:0 0 18px;
+    }
+    .ins-articles-rule{border:0;border-top:1px solid #162029;margin:0 0 clamp(28px,3vw,44px);}
+    .ins-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:56px 24px;}
+    .ins-card{display:block;text-decoration:none;color:inherit;}
+    a.ins-card:hover .ins-card-title{color:#c9de6b;}
+    .ins-card-img{
+      width:100%;aspect-ratio:16/9;object-fit:cover;display:block;
+      background:#efe9fc;margin-bottom:16px;
+    }
+    .ins-card-date{
+      font-family:'Inter',sans-serif;font-weight:400;font-size:0.78rem;
+      color:rgba(22,32,41,0.6);margin:0 0 8px;
+    }
+    .ins-card-title{
+      font-family:'Inter',sans-serif;font-weight:600;font-size:1.0625rem;line-height:1.3;
+      letter-spacing:-0.01em;color:#162029;margin:0 0 6px;transition:color .2s;
+    }
+    .ins-card-dek{
+      font-family:'Inter',sans-serif;font-weight:400;font-size:0.84rem;line-height:1.45;
+      color:rgba(22,32,41,0.65);margin:0;
+    }
+
+    /* ══ 3. SIMPLE CTA ══ */
+    .cta-simple{background:#162029;padding:clamp(110px,14vw,190px) 0;text-align:center;position:relative;overflow:hidden;}
+    .cta-simple-frame{position:absolute;inset:clamp(14px,1.6vw,24px);border:1px solid rgba(175,194,204,0.18);pointer-events:none;}
+    .cta-corner{position:absolute;width:6px;height:6px;background:#DEF282;z-index:1;}
+    .cta-corner--tl{top:clamp(11px,1.4vw,21px);left:clamp(11px,1.4vw,21px);}
+    .cta-corner--tr{top:clamp(11px,1.4vw,21px);right:clamp(11px,1.4vw,21px);}
+    .cta-corner--bl{bottom:clamp(11px,1.4vw,21px);left:clamp(11px,1.4vw,21px);}
+    .cta-corner--br{bottom:clamp(11px,1.4vw,21px);right:clamp(11px,1.4vw,21px);}
+    .cta-simple > *{position:relative;z-index:1;}
+    .cta-kicker{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;
+      font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;
+      color:#AFC2CC;margin:0 0 28px;
+    }
+    .cta-simple-h2{
+      font-family:'Inter',sans-serif;font-weight:450;
+      font-size:clamp(2.5rem,calc(1.656rem + 3.605vw),4.9rem);line-height:1.05;letter-spacing:-0.04em;
+      color:#F2F6FA;margin:0 auto 44px;text-wrap:balance;
+    }
+    .cta-period{color:#DEF282;}
+    .cta-simple-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;}
+    .cta-btn{
+      display:inline-flex;align-items:center;gap:10px;
+      font-family:'Inter',sans-serif;font-weight:500;
+      font-size:0.8125rem;letter-spacing:0.06em;text-transform:uppercase;
+      padding:16px 26px;border-radius:4px;text-decoration:none;transition:filter .2s,border-color .2s,color .2s;
+    }
+    .cta-btn--primary{background:#DEF282;color:#162029;}
+    .cta-btn--primary:hover{filter:brightness(1.06);}
+    .cta-btn--secondary{background:transparent;color:#F2F6FA;border:1px solid rgba(175,194,204,0.45);}
+    .cta-btn--secondary:hover{border-color:#DEF282;color:#DEF282;}
+    .cta-btn--secondary svg{display:block;}
+
+    /* ══ 4. NEW FOOTER — light, Fitt layout ══ */
+    footer.footer-ins{background:#FFFCF4;border-top:1px solid rgba(22,32,41,0.15);padding:clamp(48px,6vw,72px) 0 32px;color:#162029;font-size:1rem;letter-spacing:0;}
+    .footer-ins-grid{display:flex;justify-content:space-between;gap:clamp(40px,6vw,96px);}
+    .footer-ins-left{max-width:460px;display:flex;flex-direction:column;}
+    .footer-ins-logo{height:42px;width:auto;display:block;}
+    .footer-ins-sub{margin-top:clamp(48px,7vw,110px);}
+    .footer-ins-sub p{
+      font-family:'Inter',sans-serif;font-size:0.9375rem;line-height:1.5;
+      color:#162029;margin:0 0 14px;
+    }
+    .footer-ins-form{
+      display:flex;align-items:center;background:#fff;border:1px solid #162029;border-radius:999px;
+      padding:4px 4px 4px 20px;max-width:440px;
+    }
+    .footer-ins-form input{
+      flex:1;min-width:0;border:0;outline:0;background:transparent;
+      font-family:'Inter',sans-serif;font-size:0.9375rem;color:#162029;padding:9px 8px 9px 0;
+    }
+    .footer-ins-form input::placeholder{color:rgba(22,32,41,0.55);}
+    .footer-ins-form button{
+      flex:none;width:38px;height:38px;border-radius:50%;border:0;cursor:pointer;
+      background:#162029;color:#fff;display:flex;align-items:center;justify-content:center;
+      transition:background .2s;
+    }
+    .footer-ins-form button:hover{background:#c9de6b;}
+    .footer-ins-copy{
+      font-family:'Inter',sans-serif;font-size:0.78rem;color:rgba(22,32,41,0.6);margin:20px 0 0;
+    }
+    .footer-ins-copy a{color:inherit;}
+    .footer-ins-cols{display:flex;gap:clamp(32px,4vw,64px);flex:none;}
+    .footer-ins-col{min-width:170px;}
+    .footer-ins-col a{
+      display:block;text-decoration:none;color:#162029;
+      font-family:'Inter',sans-serif;font-size:1rem;line-height:1;
+      padding:16px 0;transition:color .2s;
+    }
+    .footer-ins-col a:hover{color:#c9de6b;}
+    .footer-ins-col--primary a{
+      font-weight:600;font-size:1.125rem;border-bottom:1px solid rgba(22,32,41,0.2);
+    }
+    .footer-ins-col--primary a:last-child{border-bottom:0;}
+    .footer-ins-col--secondary a{font-weight:400;color:rgba(22,32,41,0.85);}
+    .footer-ins-social{display:flex;gap:14px;margin-top:14px;}
+    .footer-ins-social a{color:#162029;padding:0;border:0;}
+    .footer-ins-social a:hover{color:#c9de6b;}
+
+    /* ══ RESPONSIVE ══ */
+    @media(max-width:1024px){
+      .ins-grid{grid-template-columns:repeat(2,1fr);}
+    }
+    @media(max-width:768px){
+      .ins-hero{padding:56px 0 64px;}
+      .ins-grid{grid-template-columns:repeat(2,1fr);gap:44px 16px;}
+      .footer-ins-grid{flex-direction:column;}
+      .footer-ins-sub{margin-top:40px;}
+      .footer-ins-cols{width:100%;}
+      .footer-ins-col{flex:1;min-width:0;}
+    }
+    @media(max-width:560px){
+      .ins-grid{grid-template-columns:1fr;}
+      .footer-ins-cols{flex-direction:column;gap:24px;}
+    }
+    .wr-announce{
+      position:relative;z-index:40;height:52px;
+      background:#DEF282;color:#162029;
+      display:flex;align-items:center;justify-content:center;gap:20px;
+      padding:0 clamp(16px,3vw,32px);text-align:center;
+    }
+    .wr-announce-label{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:600;
+      font-size:0.9375rem;letter-spacing:0.12em;text-transform:uppercase;flex:none;
+    }
+    .wr-announce-text{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;font-size:1rem;line-height:1.3;letter-spacing:0.03em;text-transform:uppercase;
+      margin:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+    }
+    .wr-announce-link{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:600;font-size:1rem;letter-spacing:0.03em;text-transform:uppercase;
+      color:inherit;text-decoration:underline;text-underline-offset:3px;flex:none;
+    }
+    @media(max-width:768px){
+      .wr-announce{gap:10px;}
+      .wr-announce-text{white-space:normal;font-size:1rem;}
+      .wr-announce-label{display:none;}
+    }
+    .nav-cta{background:#DEF282;color:#162029;}
+    .nav-cta::after{background:#c9de6b;color:#162029;}
+    .vx-label{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;
+      font-size:0.75rem;letter-spacing:0.14em;text-transform:uppercase;
+      color:#AFC2CC;margin:0 0 16px;
+    }
+    footer.sx-footer{background:#10161D;color:#F2F6FA;padding:0;border-top:0;}
+    .sx-grid{display:grid;grid-template-columns:1fr 1.5fr 1.5fr;min-height:520px;}
+    .sx-col{border-left:1px solid rgba(255,255,255,0.08);padding:clamp(28px,3vw,44px);display:flex;flex-direction:column;}
+    .sx-col:first-child{border-left:0;padding:0;}
+    .sx-brandbox{padding:clamp(28px,3vw,44px);flex:1;}
+    .sx-logo{width:clamp(150px,13vw,190px);height:auto;display:block;}
+    .sx-joinbox{border-top:1px solid rgba(255,255,255,0.08);padding:clamp(24px,2.5vw,36px) clamp(28px,3vw,44px);}
+    .sx-join-p{font-family:'Inter',sans-serif;font-weight:400;font-size:0.9375rem;line-height:1.55;color:#F2F6FA;margin:12px 0 20px;max-width:26ch;}
+    .sx-btn{
+      display:inline-flex;align-items:center;gap:12px;
+      font-family:'Inter',sans-serif;font-weight:500;font-size:0.75rem;letter-spacing:0.06em;text-transform:uppercase;
+      background:#DEF282;color:#162029;padding:12px 16px;border-radius:4px;text-decoration:none;transition:filter .2s;
+    }
+    .sx-btn:hover{filter:brightness(1.06);}
+    .sx-bottombox{border-top:1px solid rgba(255,255,255,0.08);padding:clamp(20px,2vw,28px) clamp(28px,3vw,44px);}
+    .sx-small{font-family:'Inter',sans-serif;font-weight:400;font-size:0.8125rem;color:#F2F6FA;margin:0 0 6px;}
+    .sx-dim{color:rgba(242,246,250,0.45);}
+    .sx-addr{margin:14px 0 18px;line-height:1.5;}
+    .sx-bottombox .sx-small:first-child{font-size:1.625rem;letter-spacing:-0.02em;}
+    .sx-texas{display:flex;align-items:center;gap:14px;}
+    .sx-tx{width:40px;height:auto;display:block;flex:none;}
+    .sx-btn:not([href]){cursor:default;}
+    .sx-btn:not([href]):hover{filter:none;}
+    .sx-navlist{display:flex;flex-direction:column;gap:6px;margin-top:clamp(32px,4vw,56px);}
+    .sx-navlist a{
+      font-family:'Inter',sans-serif;font-weight:300;
+      font-size:clamp(1.625rem,2.4vw,2.125rem);letter-spacing:-0.02em;
+      color:#AFC2CC;text-decoration:none;transition:color .2s;width:fit-content;
+    }
+    .sx-navlist a:hover{color:#F2F6FA;}
+    .sx-navlist a[aria-current="page"]{color:#F2F6FA;}
+    .sx-connect{margin-top:auto;padding-top:40px;}
+    .sx-connect a{color:#AFC2CC;display:inline-flex;margin-right:14px;transition:color .2s;}
+    .sx-connect a:hover{color:#F2F6FA;}
+    @media(max-width:900px){
+      .sx-grid{grid-template-columns:1fr;}
+      .sx-col{border-left:0;border-top:1px solid rgba(255,255,255,0.08);}
+    }
+  </style>
+</head>
+<body class="ins-page">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5876HGC3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="wr-announce">
+    <span class="wr-announce-label">Announcement</span>
+    <p class="wr-announce-text">Partner spotlight: Renew Home announces major flexible-energy framework with Sunrun and Tesla.</p>
+    <a href="/insights/renew-home-flexible-energy-framework/" class="wr-announce-link">Learn More</a>
+  </div>
+  <header>
+    <div class="page-inner header-inner">
+      <a href="/" class="nav-wordmark" aria-label="The WhiteRock Group">
+        <img src="../assets/logo-wordmark-white.png" alt="The WhiteRock Group" class="nav-wordmark-img">
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/#services" class="nav-link">Services</a>
+        <a href="/mission/" class="nav-link">Mission</a>
+        
+        <a href="/insights/" class="nav-link">Insights</a>
+      </nav>
+      <a href="/contact/" class="nav-cta">Contact Us</a>
+      <button id="menu-btn" class="menu-btn" aria-label="Open menu">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg>
+      </button>
+    </div>
+  </header>
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+  <nav id="slide-nav" class="slide-nav" aria-label="Mobile navigation">
+    <div class="slide-nav-links">
+      <a href="/#services">Services</a>
+      <a href="/mission/">Mission</a>
+      <a href="/insights/">Insights</a>
+      <a href="/contact/">Contact Us</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ══ 1. HERO ══ -->
+    <section class="ins-hero">
+      <div class="ins-wrap">
+        <h1 class="ins-h1">Insights</h1>
+        <p class="ins-hero-sub">We break down the convergence of capital, operations, and leadership — and what it means for revenue, teams, and value creation.</p>
+        <form class="ins-sub-form" id="ins-subscribe" novalidate>
+          <label for="ins-email" class="sr-only" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email address</label>
+          <input class="ins-sub-input" id="ins-email" type="email" name="email" placeholder="Enter your email address to subscribe." autocomplete="email" required>
+          <button class="ins-sub-btn" type="submit" aria-label="Subscribe">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </button>
+        </form>
+        <p class="ins-sub-msg" id="ins-sub-msg" role="status"></p>
+      </div>
+    </section>
+
+    <!-- ══ 2. ARTICLES ══ -->
+    <section class="ins-articles">
+      <div class="ins-wrap">
+        <h2 class="ins-articles-h2">INSIGHTS, NEWS &amp; EMERGING TRENDS</h2>
+        <hr class="ins-articles-rule">
+        <div class="ins-grid">
+          <a class="ins-card ins-reveal" href="/insights/a-letter-from-our-founder/">
+            <img class="ins-card-img" src="../assets/insights/chelsea-founder-letter.jpg" alt="Chelsea Tiner, Founder and CEO of The WhiteRock Group">
+            <p class="ins-card-date">July 17, 2026</p>
+            <h3 class="ins-card-title">A Letter from Our Founder: The Next Era of Value Creation</h3>
+            <p class="ins-card-dek">The call, answered.</p>
+          </a>
+
+          <a class="ins-card ins-reveal" href="/insights/renew-home-flexible-energy-framework/">
+            <img class="ins-card-img" src="../assets/insights/renew-home-vpp.png" alt="Renew Home, Sunrun, and Tesla 16.8 GW flexible capacity map">
+            <p class="ins-card-date">July 17, 2026</p>
+            <h3 class="ins-card-title">Partner Spotlight: Renew Home, Sunrun &amp; Tesla Announce 16.8 GW Flexible-Energy Framework</h3>
+            <p class="ins-card-dek">Powered by homes.</p>
+          </a>
+
+          <a class="ins-card ins-reveal" href="/insights/keepit-50m-growth-funding/">
+            <img class="ins-card-img" src="../assets/insights/keepit-funding.jpg" alt="Keepit leadership celebrating the $50M funding round">
+            <p class="ins-card-date">July 16, 2026</p>
+            <h3 class="ins-card-title">Inside Keepit&#8217;s $50M Raise: Scaling Revenue Operations for Global Expansion</h3>
+            <p class="ins-card-dek">Built to hold up under diligence.</p>
+          </a>
+
+          <a class="ins-card ins-reveal" href="/insights/second-circle-partnership/">
+            <img class="ins-card-img" src="../assets/insights/wrg-2ci-partnership.png" alt="The WhiteRock Group and The Second Circle Institute partnership lockup">
+            <p class="ins-card-date">July 15, 2026</p>
+            <h3 class="ins-card-title">WhiteRock Group Partners with The Second Circle Institute on Leadership Development</h3>
+            <p class="ins-card-dek">Leaders, elevated.</p>
+          </a>
+
+          <a class="ins-card ins-reveal" href="/insights/gtm-engineer-belongs-in-revops/">
+            <img class="ins-card-img" src="../assets/insights/gtm-engineer.avif" alt="A GTM engineer working across systems and dashboards">
+            <p class="ins-card-date">July 14, 2026</p>
+            <h3 class="ins-card-title">The Rise of the GTM Engineer, and Why the Role Belongs in RevOps</h3>
+            <p class="ins-card-dek">Where the role reports decides.</p>
+          </a>
+
+          <a class="ins-card ins-reveal" href="/insights/5x-ceo-assessment/">
+            <img class="ins-card-img" src="../assets/insights/5x-ceo-mountains.jpg" alt="Aerial view of snow-covered mountain ridges">
+            <p class="ins-card-date">July 13, 2026</p>
+            <h3 class="ins-card-title">The 5X CEO Assessment: How Top PE-Backed CEOs Diagnose Their Leadership Teams</h3>
+            <p class="ins-card-dek">6.2x, diagnosed.</p>
+          </a>
+
+
+          <a class="ins-card ins-reveal" href="/insights/how-personal-injury-attorneys-use-ai/">
+            <img class="ins-card-img" src="../assets/insights/pi-attorneys-ai.png" alt="Legal operations dashboard for a personal injury practice">
+            <p class="ins-card-date">July 18, 2026</p>
+            <h3 class="ins-card-title">How Personal Injury Attorneys Use AI to Handle More Cases</h3>
+            <p class="ins-card-dek">Caseload math, changed.</p>
+          </a>
+
+          <a class="ins-card ins-reveal" href="/insights/what-15-years-of-hiring-taught-me/">
+            <img class="ins-card-img" src="../assets/insights/hiring-talent.jpg" alt="Classical statue styled in vivid pink and yellow">
+            <p class="ins-card-date">July 18, 2026</p>
+            <h3 class="ins-card-title">What 15+ Years of Hiring Taught Me About Talent</h3>
+            <p class="ins-card-dek">Talent is the business.</p>
+          </a>
+
+          <div class="ins-card ins-reveal">
+            <img class="ins-card-img" src="../assets/cta-hands.jpg" alt="Two hands reaching toward each other over mountains">
+            <p class="ins-card-date">February 11, 2026</p>
+            <h3 class="ins-card-title">Retention Is a System, Not a Save</h3>
+            <p class="ins-card-dek">Compounding.</p>
+          </div>
+
+          <div class="ins-card ins-reveal">
+            <img class="ins-card-img" src="../assets/cta-runner.jpg" alt="A runner mid-stride crossing a city street">
+            <p class="ins-card-date">January 28, 2026</p>
+            <h3 class="ins-card-title">Speed-to-Lead: The Cheapest Revenue You're Ignoring</h3>
+            <p class="ins-card-dek">Fast wins.</p>
+          </div>
+
+          <div class="ins-card ins-reveal">
+            <img class="ins-card-img" src="../assets/hero-editorial.jpg" alt="A stack of printed reports on a bench">
+            <p class="ins-card-date">January 14, 2026</p>
+            <h3 class="ins-card-title">The Post-Acquisition First 100 Days</h3>
+            <p class="ins-card-dek">Day one.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ 3. SIMPLE CTA ══ -->
+    <section class="cta-simple">
+      <span class="cta-simple-frame" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--tl" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--tr" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--bl" aria-hidden="true"></span>
+      <span class="cta-corner cta-corner--br" aria-hidden="true"></span>
+      <div class="cta-simple-wrap">
+        <p class="cta-kicker">Ready when you are</p>
+        <h2 class="cta-simple-h2">Operations define outcomes<span class="cta-period">.</span></h2>
+        <div class="cta-simple-btns">
+          <a href="/contact/" class="cta-btn cta-btn--primary">Get Started</a>
+          <a href="/insights/" class="cta-btn cta-btn--secondary">Insights
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ══ 4. FOOTER — light ══ -->
+  <footer class="sx-footer">
+    <div class="sx-grid">
+      <div class="sx-col">
+        <div class="sx-brandbox">
+          <a href="/" aria-label="The WhiteRock Group home">
+            <img src="/assets/wrg-hero-logo.png" alt="WR.G" class="sx-logo">
+          </a>
+        </div>
+        <div class="sx-joinbox">
+          <p class="vx-label">Join Our Mission</p>
+          <p class="sx-join-p">Check out our open roles and let's build a more intelligent future, together.</p>
+          <a class="sx-btn" role="link" aria-disabled="true">View Job Openings
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
+          </a>
+        </div>
+        <div class="sx-bottombox">
+          <p class="sx-small sx-texas"><img src="/assets/texas-lone-star.png" alt="" class="sx-tx" aria-hidden="true">Built in Texas</p>
+          <p class="sx-small sx-dim sx-addr">Dallas<br>6301 Gaston Ave,<br>Dallas, TX 75214</p>
+          <p class="sx-small sx-dim">&copy; 2026 The WhiteRock Group</p>
+        </div>
+      </div>
+      <nav class="sx-col" aria-label="Services">
+        <p class="vx-label">Services</p>
+        <div class="sx-navlist">
+          <a href="/#capabilities">Capabilities</a>
+          <a href="/#verticals">Verticals</a>
+        </div>
+      </nav>
+      <nav class="sx-col" aria-label="Company">
+        <p class="vx-label">Company</p>
+        <div class="sx-navlist">
+          <a href="/mission/">Mission</a>
+          <a href="/mission/">Team</a>
+          <a href="/insights/" aria-current="page">Newsroom</a>
+          <a href="/contact/">Contact</a>
+        </div>
+        <div class="sx-connect">
+          <p class="vx-label">Connect</p>
+          <a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="../js/main.js?v=20260717c"></script>
+  <script>
+    // Scroll reveals for article cards
+    (function(){
+      var els = document.querySelectorAll('.ins-reveal');
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        els.forEach(function(el){ el.classList.add('in'); });
+        return;
+      }
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+        });
+      }, {threshold: 0.12});
+      els.forEach(function(el){ io.observe(el); });
+    })();
+
+  </script>
+</body>
+</html>

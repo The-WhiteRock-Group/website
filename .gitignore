@@ -9,3 +9,12 @@ services/*-template.html
 portfolio/*.md
 portfolio/*-template.html
 portfolio/example-folder/
+
+# Local working files — never deploy (added 2026-07-18)
+HANDOFF.md
+.claude/
+_archive/
+staging/
+index-draft.html
+skills-lock.json
+partners.html

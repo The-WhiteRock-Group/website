@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5876HGC3');</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Private Equity | The WhiteRock Group</title>
+  <meta name="description" content="Revenue operations and technology consulting for private equity portfolio companies. The WhiteRock Group helps PE-backed businesses scale smarter.">
+  <meta name="author" content="The WhiteRock Group">
+  <link rel="canonical" href="https://thewhiterockgroup.co/services/private-equity/">
+  <meta property="og:title" content="Private Equity | The WhiteRock Group">
+  <meta property="og:description" content="Revenue operations and technology consulting for private equity portfolio companies.">
+  <meta property="og:url" content="https://thewhiterockgroup.co/services/private-equity/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://thewhiterockgroup.co/assets/pe-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/style.css?v=20260717c">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-39KHHYPNS4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-39KHHYPNS4');
+  </script>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;}
+    .pe-page{background:#fff;color:#1D1D1B;min-height:100vh;}
+
+    /* Nav */
+    header{position:static;background:#161616;padding:16px 0;color:#fff;pointer-events:auto;}
+    .nav-link{color:rgba(255,255,255,0.7);}
+    .nav-link:hover{color:#fff;}
+    .nav-link--dropdown::after{border-right-color:rgba(255,255,255,0.7);border-bottom-color:rgba(255,255,255,0.7);}
+    .menu-btn{color:#fff;}
+    
+
+    /* Spacing scale — 4pt base, all section rhythm draws from this */
+    .pe-page{
+      --sp-xs:8px; --sp-sm:16px; --sp-md:24px;
+      --sp-lg:48px; --sp-xl:clamp(64px,8vw,96px); --sp-2xl:clamp(88px,11vw,128px);
+    }
+
+    /* Shared container — every section aligns to this */
+    .pe-wrap{max-width:var(--max-w);margin:0 auto;padding:0 clamp(24px,6vw,120px);}
+
+    /* Scroll reveal — subtle fade-up, sections earn their entrance */
+    .pe-reveal{opacity:0;transform:translateY(20px);transition:opacity .7s cubic-bezier(0.25,1,0.5,1),transform .7s cubic-bezier(0.25,1,0.5,1);}
+    .pe-reveal.in{opacity:1;transform:translateY(0);}
+    @media(prefers-reduced-motion:reduce){
+      .pe-reveal{opacity:1;transform:none;transition:none;}
+    }
+
+    /* ══ 1. HERO ══ */
+    .pe-hero{background:#161616;color:#fff;padding:clamp(80px,9vw,112px) 0;}
+    .pe-heading{
+      font-family:'Inter',sans-serif;font-weight:300;
+      font-size:clamp(2.4rem,4.8vw,4rem);
+      line-height:1.15;letter-spacing:-0.02em;
+      color:#fff;margin:0 0 32px;max-width:920px;text-wrap:balance;
+    }
+    .pe-sub{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:1rem;line-height:1.7;letter-spacing:0.01em;
+      color:rgba(255,255,255,0.72);max-width:62ch;margin:0;
+      text-wrap:pretty;
+    }
+
+    /* ══ 2. ACCORDION ══ */
+    .pe-accordion{background:#fff;padding:calc(var(--sp-xl) + 10px) 0 calc(var(--sp-lg) + 10px);border-bottom:1px solid #e5e3de;}
+    .pe-acc-header{margin-bottom:calc(var(--sp-lg) + 10px);text-align:center;}
+    .pe-acc-h2{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:clamp(2.2rem,4.2vw,3.75rem);line-height:1.25;
+      letter-spacing:0;color:#1D1D1B;
+      margin:0 auto 16px;max-width:58ch;text-wrap:balance;
+    }
+    .pe-acc-header-sub{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:1rem;line-height:1.7;
+      color:rgba(29,29,27,0.55);max-width:52ch;margin:0 auto;text-wrap:pretty;
+    }
+    .pe-acc-body p+p{margin-top:12px;}
+    .pe-acc-body ul{
+      margin:10px 0 14px;padding-left:20px;
+      display:flex;flex-direction:column;gap:5px;
+      list-style:disc;
+    }
+    .pe-acc-body li{display:list-item;list-style:disc;}
+    .pe-acc-body li::marker{color:#9b7fe0;}
+    .pe-acc-body li{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:0.9375rem;line-height:1.45;
+      color:rgba(29,29,27,0.55);
+    }
+    .pe-acc-flex{display:flex;gap:48px;align-items:flex-start;}
+    .pe-acc-left{flex:65 1 0;min-width:0;}
+    .pe-acc-right{
+      flex:35 1 0;display:flex;align-items:center;justify-content:center;
+      background:#f5f4f0;border-radius:10px;aspect-ratio:1/1;overflow:hidden;
+    }
+    .pe-acc-right img{width:55%;height:auto;object-fit:contain;transition:opacity .35s cubic-bezier(0.25,1,0.5,1),transform .35s cubic-bezier(0.25,1,0.5,1);}
+    .pe-acc-right img.swapping{opacity:0;transform:scale(0.96);}
+    .pe-acc-item{border-bottom:1px solid #e5e3de;}
+    .pe-acc-trigger{
+      width:100%;display:flex;align-items:center;justify-content:space-between;
+      padding:18px 0;background:none;border:none;cursor:pointer;text-align:left;
+      font-family:'Inter',sans-serif;font-weight:600;font-size:1.5rem;
+      color:#1D1D1B;transition:color .2s;
+    }
+    .pe-acc-trigger[aria-expanded="false"]{color:rgba(29,29,27,0.4);}
+    .pe-acc-trigger:hover{color:#1D1D1B;}
+    .pe-acc-chev{width:14px;height:14px;flex-shrink:0;transition:transform .3s;color:rgba(29,29,27,0.3);}
+    .pe-acc-trigger[aria-expanded="true"] .pe-acc-chev{transform:rotate(180deg);color:#9b7fe0;}
+    .pe-acc-body{overflow:hidden;max-height:0;transition:max-height .35s ease;}
+    .pe-acc-body-inner{padding:0 0 16px;}
+    .pe-acc-body p{font-family:'Inter',sans-serif;font-weight:400;font-size:1rem;line-height:1.65;color:rgba(29,29,27,0.55);margin:0;}
+    .pe-acc-lead{font-size:0.9375rem !important;font-weight:500 !important;color:#1D1D1B !important;line-height:1.45 !important;}
+    .pe-acc-label{font-size:0.9375rem !important;font-weight:500 !important;color:#1D1D1B !important;line-height:1.45 !important;}
+    .pe-acc-mob{display:none;margin-top:12px;background:#f5f4f0;border-radius:8px;padding:20px;text-align:center;}
+    .pe-acc-mob img{width:50%;height:auto;}
+
+    /* ══ 3. ADVANCED FEATURES ══ */
+    .pe-feats{background:#fff;padding:48px 0 56px;border-bottom:1px solid #e5e3de;}
+    .pe-feats-label{
+      font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;font-size:1rem;
+      letter-spacing:0.03em;text-transform:uppercase;
+      color:#1D1D1B;margin-bottom:32px;display:flex;align-items:center;gap:8px;
+    }
+    .pe-feats-label::before{content:'';width:6px;height:6px;background:#9b7fe0;border-radius:50%;}
+    .pe-feats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;}
+    .pe-feat{transition:transform .3s cubic-bezier(0.25,1,0.5,1);}
+    .pe-feat:hover{transform:translateY(-3px);}
+    .pe-feat:hover .pe-feat-icon{color:#9b7fe0;}
+    .pe-feat-icon{width:24px;height:24px;margin-bottom:14px;color:#1D1D1B;transition:color .3s;}
+    .pe-feat-title{font-family:'Inter',sans-serif;font-weight:500;font-size:1rem;color:#1D1D1B;margin:0 0 6px;}
+    .pe-feat-desc{font-family:'Inter',sans-serif;font-weight:400;font-size:0.875rem;line-height:1.55;color:rgba(29,29,27,0.5);margin:0;}
+
+    /* ══ 3b. PORTFOLIO COST STAT ══ */
+    .pe-stat{background:#161616;color:#fff;padding:calc(var(--sp-2xl) + 15px) 0;}
+    .pe-stat-top{
+      display:flex;justify-content:space-between;align-items:flex-start;
+      gap:var(--sp-lg);margin-bottom:var(--sp-xl);
+    }
+    .pe-stat-num{
+      font-family:'Inter',sans-serif;font-weight:700;
+      font-size:clamp(3.6rem,7.2vw,6.125rem);line-height:1;
+      letter-spacing:-0.03em;color:#fff;margin:0 0 24px;white-space:nowrap;
+    }
+    .pe-stat-sub{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:1rem;line-height:1.7;letter-spacing:0.01em;
+      color:rgba(255,255,255,0.72);max-width:52ch;margin:0;text-wrap:pretty;
+    }
+    .pe-stat-title{
+      font-family:'Inter',sans-serif;font-weight:400;
+      font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.5;
+      color:rgba(255,255,255,0.45);max-width:340px;margin:0;
+      padding-top:14px;flex-shrink:0;
+    }
+    .pe-stat-dots{
+      display:grid;grid-template-columns:repeat(28,1fr);gap:clamp(4px,0.5vw,8px);
+    }
+    .pe-dot{
+      aspect-ratio:1;border-radius:50%;
+      background:rgba(255,255,255,0.06);
+      opacity:0;transform:scale(0.6);
+      transition:opacity .5s cubic-bezier(0.25,1,0.5,1),transform .5s cubic-bezier(0.25,1,0.5,1),background .3s;
+    }
+    .pe-dot.on{background:#BEA5F6;}
+    .pe-stat-dots.in .pe-dot{opacity:1;transform:scale(1);}
+    @media(prefers-reduced-motion:reduce){
+      .pe-dot{opacity:1;transform:none;transition:none;}
+    }
+
+    /* ══ 4. M&A + PE-BACKED GROWTH ══ */
+    .pe-mna{background:#fff;padding:var(--sp-2xl) 0;border-bottom:1px solid #e5e3de;}
+    .pe-mna-layout{display:flex;gap:var(--sp-lg);align-items:flex-start;}
+    .pe-mna-left{flex:1;min-width:0;}
+    .pe-mna-h2{font-family:'Inter',sans-serif;font-weight:500;font-size:clamp(2.2rem,4.2vw,3.75rem);line-height:1.15;color:#1D1D1B;margin:0 0 20px;}
+    .pe-mna-p{font-family:'Inter',sans-serif;font-weight:400;font-size:clamp(1.05rem,1.5vw,1.3rem);line-height:1.5;color:rgba(29,29,27,0.55);margin:0;max-width:34ch;text-wrap:pretty;}
+    .pe-mna-right{flex:1;min-width:0;}
+    .pe-mna-card{display:flex;gap:20px;align-items:flex-start;padding:var(--sp-md) 0;border-bottom:1px solid #e5e3de;}
+    .pe-mna-card:first-child{padding-top:0;}
+    .pe-mna-card:last-child{border-bottom:none;}
+    .pe-mna-img-frame{width:145px;height:160px;border-radius:5px;overflow:hidden;flex-shrink:0;}
+    .pe-mna-img{width:100%;height:100%;object-fit:cover;transition:transform .5s cubic-bezier(0.25,1,0.5,1);}
+    .pe-mna-card:hover .pe-mna-img{transform:scale(1.06);}
+    .pe-mna-info{flex:1;min-width:0;}
+    .pe-mna-num{
+      display:inline-flex;align-items:center;justify-content:center;
+      width:24px;height:24px;border:1px solid #e5e3de;border-radius:50%;
+      font-family:'Inter',sans-serif;font-size:0.75rem;color:rgba(29,29,27,0.45);margin-bottom:8px;
+      transition:background .3s,border-color .3s,color .3s;
+    }
+    .pe-mna-card:hover .pe-mna-num{background:#BEA5F6;border-color:#BEA5F6;color:#161616;}
+    .pe-mna-card-h{font-family:'Inter',sans-serif;font-weight:500;font-size:1.5rem;color:#1D1D1B;margin:0 0 6px;}
+    .pe-mna-card-p{font-family:'Inter',sans-serif;font-weight:400;font-size:0.9375rem;line-height:1.45;color:rgba(29,29,27,0.55);margin:0;}
+
+    /* ══ 5. TRUST + LOGOS (one continuous dark section, Rollups-style) ══ */
+    .pe-trust{background:#161616;color:#fff;padding:var(--sp-xl) 0 var(--sp-xl);}
+    .pe-trust-h{
+      font-family:'Inter',sans-serif;font-weight:500;
+      font-size:clamp(2.2rem,4.2vw,3.75rem);line-height:1.15;
+      letter-spacing:0;color:#fff;margin:0;max-width:900px;
+    }
+    .pe-logos{background:#161616;padding:0 0 var(--sp-xl);}
+    /* Grid offset right, bleeding to the viewport edge */
+    .pe-logos-offset{margin-left:clamp(48px,26vw,26%);}
+    .pe-logos-grid{
+      display:grid;grid-template-columns:repeat(6,1fr);
+      border-top:1px solid rgba(255,255,255,0.12);
+      border-left:1px solid rgba(255,255,255,0.12);
+      border-bottom:1px solid rgba(255,255,255,0.12);
+    }
+    .pe-logo-item{
+      display:flex;align-items:center;justify-content:center;gap:10px;
+      min-height:clamp(130px,14vw,190px);
+      padding:24px 16px;
+      border-right:1px solid rgba(255,255,255,0.12);
+      transition:background .25s;
+    }
+    .pe-logo-item:nth-child(-n+6){border-bottom:1px solid rgba(255,255,255,0.12);}
+    .pe-logo-item:hover{background:rgba(190,165,246,0.06);}
+    .pe-logo-item img{height:22px;width:auto;filter:brightness(0) invert(0.85) sepia(0.1) hue-rotate(30deg);opacity:0.75;transition:opacity .25s;}
+    .pe-logo-item span{font-family:'Inter',sans-serif;font-weight:500;font-size:0.875rem;color:rgba(255,255,255,0.65);white-space:nowrap;transition:color .25s;}
+    .pe-logo-item:hover img{opacity:1;}
+    .pe-logo-item:hover span{color:rgba(255,255,255,0.95);}
+
+
+    /* ══ RESPONSIVE ══ */
+    @media(max-width:768px){
+      .pe-hero{padding:64px 0 56px;}
+      .pe-heading{font-size:clamp(2rem,7vw,2.8rem);max-width:100%;}
+      .pe-accordion{padding:48px 0;}
+      .pe-acc-flex{flex-direction:column;gap:0;}
+      .pe-acc-right{display:none;}
+      .pe-acc-mob{display:block;}
+      .pe-feats{padding:36px 0 44px;}
+      .pe-feats-grid{grid-template-columns:repeat(2,1fr);gap:20px;}
+      .pe-stat{padding:56px 0;}
+      .pe-stat-top{flex-direction:column-reverse;gap:24px;margin-bottom:48px;}
+      .pe-stat-title{padding-top:0;max-width:100%;}
+      .pe-stat-num{white-space:normal;}
+      .pe-mna{padding:48px 0;}
+      .pe-mna-layout{flex-direction:column;gap:24px;}
+      .pe-mna-left{flex:none;width:100%;}
+      .pe-mna-card{flex-direction:column;gap:12px;}
+      .pe-mna-img-frame{width:100%;height:160px;}
+      .pe-trust{padding:48px 0;}
+      .pe-trust{padding:56px 0 64px;}
+      .pe-logos{padding:0 0 48px;}
+      .pe-logos-offset{margin-left:24px;}
+      .pe-logos-grid{grid-template-columns:repeat(2,1fr);}
+      .pe-logo-item{min-height:110px;padding:20px 12px;}
+      .pe-logo-item:nth-child(-n+6){border-bottom:none;}
+      .pe-logo-item:not(:nth-last-child(-n+2)){border-bottom:1px solid rgba(255,255,255,0.12);}
+    }
+    @media(min-width:769px) and (max-width:1024px){
+      .pe-wrap{padding:0 36px;}
+      .pe-feats-grid{grid-template-columns:repeat(2,1fr);}
+      .pe-mna-left{flex:1;}
+      .pe-acc-right{flex:0 0 280px;}
+    }
+  </style>
+</head>
+<body class="pe-page">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5876HGC3" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <header>
+    <div class="page-inner header-inner">
+      <a href="/" class="nav-wordmark" aria-label="The WhiteRock Group">
+        <img src="../../assets/logo-wordmark-white.png" alt="The WhiteRock Group" class="nav-wordmark-img">
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="/#services" class="nav-link">Services</a>
+        <a href="/mission/" class="nav-link">Mission</a>
+        <a href="/insights/" class="nav-link">Insights</a>
+      </nav>
+      <a href="/contact/" class="nav-cta">Contact Us</a>
+      <button id="menu-btn" class="menu-btn" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </header>
+  <div id="nav-overlay" class="nav-overlay" aria-hidden="true"></div>
+  <nav id="slide-nav" class="slide-nav" aria-label="Mobile navigation">
+    <ul>
+      <li><a href="/#services">Services</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/mission/">Mission</a></li>
+      <li><a href="/insights/">Insights</a></li>
+      <li><a href="/contact/">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- 1. HERO -->
+    <section class="pe-hero">
+      <div class="pe-wrap">
+        <h1 class="pe-heading">Your partner across the $1M&#8211;$100M+ ARR journey</h1>
+        <p class="pe-sub">Value creation is a journey of many steps. The first is selecting operators who can consolidate systems, migrate data, and align teams without risking revenue. Few decisions matter more.</p>
+      </div>
+    </section>
+
+    <!-- 2. ACCORDION -->
+    <section class="pe-accordion">
+      <div class="pe-wrap">
+        <div class="pe-acc-header pe-reveal">
+          <h2 class="pe-acc-h2">Set a course for growth</h2>
+          <p class="pe-acc-header-sub">We provide support at each crucial stage of the portfolio lifecycle from due diligence to exit ready.</p>
+        </div>
+        <div class="pe-acc-flex pe-reveal">
+          <div class="pe-acc-left">
+            <div class="pe-acc-item" data-acc="0">
+              <button class="pe-acc-trigger" aria-expanded="true" onclick="peAccToggle(this)">
+                <span>Pre&#8209;Acquisition: Tech &amp; People Operational Due Diligence</span>
+                <svg class="pe-acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="pe-acc-body" style="max-height:2000px">
+                <div class="pe-acc-body-inner">
+                  <p class="pe-acc-lead">Financial diligence tells you what the business has done. Operational diligence tells you what it will take to do more.</p>
+                  <p class="pe-acc-lead">We run a structured pre-acquisition assessment across five operating dimensions; strategic clarity, leadership capability, organizational focus, execution discipline, and cultural health. Each is rated on two axes: how important it is to the specific growth thesis, and how well the business is actually performing against it. The gap between those two numbers is the risk.</p>
+                  <p class="pe-acc-label">This includes:</p>
+                  <ul>
+                    <li>A heat map of operating risk by dimension, coded by severity</li>
+                    <li>A talent dependency analysis</li>
+                    <li>Go-to-market readiness assessment on whether the revenue motion is repeatable and transferable</li>
+                    <li>A technology and systems audit about what the current stack can support, where the gaps are, and what investment the growth plan will require</li>
+                  </ul>
+                  <div class="pe-acc-mob"><img src="../../assets/pe-icon-1.svg" alt="Pre-Acquisition Due Diligence"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pe-acc-item" data-acc="1">
+              <button class="pe-acc-trigger" aria-expanded="false" onclick="peAccToggle(this)">
+                <span>Systems Integration</span>
+                <svg class="pe-acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="pe-acc-body">
+                <div class="pe-acc-body-inner">
+                  <p>Connect the tools your portfolio companies already use into a unified data layer. We eliminate redundant systems, fix broken integrations, and create the technical foundation for automation.</p>
+                  <div class="pe-acc-mob"><img src="../../assets/pe-icon-2.svg" alt="Systems Integration"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pe-acc-item" data-acc="2">
+              <button class="pe-acc-trigger" aria-expanded="false" onclick="peAccToggle(this)">
+                <span>Data &amp; Analytics</span>
+                <svg class="pe-acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="pe-acc-body">
+                <div class="pe-acc-body-inner">
+                  <p>Clean, structured data pipelines that give operators and investors a single source of truth. From pipeline analytics to board-ready reporting — built for decisions, not dashboards.</p>
+                  <div class="pe-acc-mob"><img src="../../assets/pe-icon-3.svg" alt="Data and Analytics"></div>
+                </div>
+              </div>
+            </div>
+            <div class="pe-acc-item" data-acc="3">
+              <button class="pe-acc-trigger" aria-expanded="false" onclick="peAccToggle(this)">
+                <span>Growth Operations</span>
+                <svg class="pe-acc-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+              </button>
+              <div class="pe-acc-body">
+                <div class="pe-acc-body-inner">
+                  <p>Repeatable processes for customer acquisition, expansion, and retention. We install the operational playbooks that let portfolio companies scale without scaling headcount at the same rate.</p>
+                  <div class="pe-acc-mob"><img src="../../assets/pe-icon-4.svg" alt="Growth Operations"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pe-acc-right">
+            <img id="pe-acc-img" src="../../assets/pe-icon-1.svg" alt="" role="presentation">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. ADVANCED FEATURES -->
+    <section class="pe-feats">
+      <div class="pe-wrap">
+        <div class="pe-feats-label">Advanced features</div>
+        <div class="pe-feats-grid pe-reveal">
+          <div>
+            <svg class="pe-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            <h3 class="pe-feat-title">Foundations &amp; Infrastructure</h3>
+            <p class="pe-feat-desc">Enterprise-grade architecture with governance frameworks that prevent technical debt. Built to support long-term growth.</p>
+          </div>
+          <div>
+            <svg class="pe-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M22 3H2l8 9.5V21l4-2v-6.5L22 3z"/></svg>
+            <h3 class="pe-feat-title">Top of Funnel</h3>
+            <p class="pe-feat-desc">Marketing and sales alignment including lead lifecycle design, definitions, and handoff processes that eliminates friction.</p>
+          </div>
+          <div>
+            <svg class="pe-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 7l-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/></svg>
+            <h3 class="pe-feat-title">Middle of Funnel</h3>
+            <p class="pe-feat-desc">From demand generation through renewal and expansion, we identify where revenue leaks &amp; operations can improve.</p>
+          </div>
+          <div>
+            <svg class="pe-feat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M12 3l1.9 5.8 5.8 1.9-5.8 1.9L12 18.4l-1.9-5.8L4.3 10.7l5.8-1.9L12 3z"/><path d="M19 15l.7 2.1 2.1.7-2.1.7L19 20.6l-.7-2.1-2.1-.7 2.1-.7L19 15z"/></svg>
+            <h3 class="pe-feat-title">AI&#8209;enabled GTM</h3>
+            <p class="pe-feat-desc">We work across the full funnel to close gaps, solve complex problems, and build you a stronger revenue engine from first touch to renewal.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3b. PORTFOLIO COST STAT -->
+    <section class="pe-stat">
+      <div class="pe-wrap">
+        <div class="pe-stat-top pe-reveal">
+          <div class="pe-stat-left">
+            <div class="pe-stat-num">$10M</div>
+            <p class="pe-stat-sub">A 1x EBITDA multiple compression is $10 million of enterprise value — often traceable to revenue infrastructure that was never built properly during the hold period.</p>
+          </div>
+          <h2 class="pe-stat-title">What revenue infrastructure gaps cost at the portfolio level.</h2>
+        </div>
+        <div class="pe-stat-dots" id="pe-stat-dots" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- 4. M&A + PE-BACKED GROWTH -->
+    <section class="pe-mna">
+      <div class="pe-wrap">
+        <div class="pe-mna-layout pe-reveal">
+          <div class="pe-mna-left">
+            <h2 class="pe-mna-h2">Expert Operators<br>&amp; Architects</h2>
+            <p class="pe-mna-p">We help create brands, systems, and experiences that shape the future.</p>
+          </div>
+          <div class="pe-mna-right">
+            <div class="pe-mna-card">
+              <div class="pe-mna-img-frame"><img class="pe-mna-img" src="../../assets/pe-mna-kite.webp" alt="Architects"></div>
+              <div class="pe-mna-info">
+                <div class="pe-mna-num">01</div>
+                <h3 class="pe-mna-card-h">Architects</h3>
+                <p class="pe-mna-card-p">The system thinkers. Architects own solution design for the biggest, most complex projects &#8212; bringing deep platform knowledge and experience building infrastructure that holds up at scale.</p>
+              </div>
+            </div>
+            <div class="pe-mna-card">
+              <div class="pe-mna-img-frame"><img class="pe-mna-img" src="../../assets/pe-mna-2.png" alt="Operators"></div>
+              <div class="pe-mna-info">
+                <div class="pe-mna-num">02</div>
+                <h3 class="pe-mna-card-h">Operators</h3>
+                <p class="pe-mna-card-p">The builders. Operators help create value for companies preparing for growth, integrating after investment, professionalizing the revenue engine, or building a more valuable business before exit.</p>
+              </div>
+            </div>
+            <div class="pe-mna-card">
+              <div class="pe-mna-img-frame"><img class="pe-mna-img" src="../../assets/pe-mna-1.png" alt="Strategic Leaders"></div>
+              <div class="pe-mna-info">
+                <div class="pe-mna-num">03</div>
+                <h3 class="pe-mna-card-h">Strategic Leaders</h3>
+                <p class="pe-mna-card-p">The standard-setters. Senior leaders who provide advisory, guide strategic decisions, and make sure every engagement delivers on outcomes.</p>
+              </div>
+            </div>
+            <div class="pe-mna-card">
+              <div class="pe-mna-img-frame"><img class="pe-mna-img" src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=400&q=80" alt="Relentlessly Obsessed"></div>
+              <div class="pe-mna-info">
+                <div class="pe-mna-num">04</div>
+                <h3 class="pe-mna-card-h">Relentlessly Obsessed</h3>
+                <p class="pe-mna-card-p">Everyone at The WhiteRock Group has a pioneering spirit as we believe extraordinary people are one of the single most important aspects of growing and that high standards are contagious.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. TRUST + LOGOS -->
+    <section class="pe-trust">
+      <div class="pe-wrap">
+        <h2 class="pe-trust-h pe-reveal">Trusted by leading<br>partners and investors</h2>
+      </div>
+    </section>
+    <section class="pe-logos">
+      <div class="pe-logos-offset">
+        <div class="pe-logos-grid pe-reveal">
+          <div class="pe-logo-item"><img src="../../assets/logos/hubspot.svg" alt=""><span>HubSpot</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/salesforce.svg" alt=""><span>Salesforce</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/gong.svg" alt=""><span>Gong</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/outreach.svg" alt=""><span>Outreach</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/netsuite.svg" alt=""><span>Netsuite</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/zoominfo.svg" alt=""><span>ZoomInfo</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/monday.svg" alt=""><span>Monday</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/slack.svg" alt=""><span>Slack</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/stripe.svg" alt=""><span>Stripe</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/snowflake.svg" alt=""><span>Snowflake</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/fivetran.svg" alt=""><span>Fivetran</span></div>
+          <div class="pe-logo-item"><img src="../../assets/logos/dbt.svg" alt=""><span>dbt</span></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- 8. CTA -->
+    <section class="cta-simple">
+      <div class="cta-simple-wrap">
+        <h2 class="cta-simple-h2">Operations define outcomes.</h2>
+        <div class="cta-simple-btns">
+          <a href="/contact/" class="cta-btn cta-btn--primary">Get Started</a>
+          <a href="/insights/" class="cta-btn cta-btn--secondary">Insights
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-ins">
+    <div class="footer-ins-wrap">
+      <div class="footer-ins-grid">
+        <div class="footer-ins-left">
+          <a href="/" aria-label="The WhiteRock Group home">
+            <img src="/assets/logo-wordmark-black.png" alt="The WhiteRock Group" class="footer-ins-logo">
+          </a>
+          <div class="footer-ins-sub">
+            <p>Subscribe for strategic intelligence on revenue, operations, and value creation.</p>
+            <form class="footer-ins-form" novalidate>
+              <label style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email address</label>
+              <input type="email" name="email" placeholder="Enter your email address to subscribe." autocomplete="email" required>
+              <button type="submit" aria-label="Subscribe">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="4" y1="12" x2="20" y2="12"/><polyline points="13 5 20 12 13 19"/></svg>
+              </button>
+            </form>
+            <p class="ins-sub-msg" role="status"></p>
+            <p class="footer-ins-copy">Copyright &copy; 2026 The WhiteRock Group. All rights reserved.</p>
+          </div>
+        </div>
+        <div class="footer-ins-cols">
+          <nav class="footer-ins-col footer-ins-col--primary" aria-label="Services">
+            <a href="/services/private-equity/">Private Equity</a>
+            <a href="/services/b2b-services/">B2B Services</a>
+            <a href="/services/law-firms/">Law Firms</a>
+            <a href="/insights/">Insights</a>
+          </nav>
+          <nav class="footer-ins-col footer-ins-col--secondary" aria-label="Company">
+            <a href="/mission/">Mission</a>
+            <a href="/partners/">Partners</a>
+            <a href="/contact/">Contact</a>
+            <div class="footer-ins-social">
+              <a href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js?v=20260717c"></script>
+  <script>
+    var peImgs=['../../assets/pe-icon-1.svg','../../assets/pe-icon-2.svg','../../assets/pe-icon-3.svg','../../assets/pe-icon-4.svg'];
+    var peReduced=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function peAccToggle(b){
+      var item=b.closest('.pe-acc-item'),idx=parseInt(item.dataset.acc),c=item.querySelector('.pe-acc-body'),open=b.getAttribute('aria-expanded')==='true';
+      document.querySelectorAll('.pe-acc-item').forEach(function(e){e.querySelector('.pe-acc-trigger').setAttribute('aria-expanded','false');e.querySelector('.pe-acc-body').style.maxHeight='0';});
+      if(!open){
+        b.setAttribute('aria-expanded','true');c.style.maxHeight=c.scrollHeight+'px';
+        var i=document.getElementById('pe-acc-img');
+        if(i){
+          if(peReduced){i.src=peImgs[idx];}
+          else{
+            i.classList.add('swapping');
+            setTimeout(function(){i.src=peImgs[idx];i.onload=function(){i.classList.remove('swapping');};},180);
+          }
+        }
+      }
+    }
+
+    /* ── OVERDRIVE: scroll-driven $10M story ──
+       Dots fill column-by-column scrubbed to scroll position;
+       the $10M figure counts up on first view. */
+    (function(){
+      var grid=document.getElementById('pe-stat-dots');
+      if(!grid)return;
+      var cols=28,rows=4,filledCols=26;
+      var dots=[];
+      for(var r=0;r<rows;r++){
+        for(var c=0;c<cols;c++){
+          var d=document.createElement('div');
+          d.className='pe-dot';
+          grid.appendChild(d);
+        }
+      }
+      /* column-major order over the first 10 columns = fill sequence */
+      var seq=[];
+      for(var c=0;c<filledCols;c++){for(var r=0;r<rows;r++){seq.push(grid.children[r*cols+c]);}}
+      grid.classList.add('in');
+
+      if(peReduced){
+        seq.forEach(function(d){d.classList.add('on');});
+      }else{
+        var section=grid.closest('.pe-stat');
+        var lastN=-1;
+        function scrub(){
+          var rect=section.getBoundingClientRect();
+          var vh=window.innerHeight;
+          /* progress: 0 when section top hits 85% vh → 1 when top hits 20% vh */
+          var p=(vh*0.85-rect.top)/(vh*0.65);
+          p=Math.max(0,Math.min(1,p));
+          var n=Math.round(p*seq.length);
+          if(n===lastN)return;
+          lastN=n;
+          for(var i=0;i<seq.length;i++){seq[i].classList.toggle('on',i<n);}
+        }
+        var ticking=false;
+        function onScroll(){
+          if(ticking)return;
+          ticking=true;
+          requestAnimationFrame(function(){scrub();ticking=false;});
+        }
+        window.addEventListener('scroll',onScroll,{passive:true});
+        window.addEventListener('resize',onScroll,{passive:true});
+        scrub();
+      }
+
+      /* Count-up: $0 → $10 million, ease-out-quart, once */
+      var num=document.querySelector('.pe-stat-num');
+      if(num&&!peReduced&&'IntersectionObserver' in window){
+        var done=false;
+        var io=new IntersectionObserver(function(es){
+          es.forEach(function(e){
+            if(!e.isIntersecting||done)return;
+            done=true;io.unobserve(num);
+            var t0=null,dur=1300;
+            function tick(t){
+              if(!t0)t0=t;
+              var k=Math.min(1,(t-t0)/dur);
+              var ease=1-Math.pow(1-k,4);
+              num.textContent='$'+Math.round(ease*10)+'M';
+              if(k<1)requestAnimationFrame(tick);
+            }
+            requestAnimationFrame(tick);
+          });
+        },{threshold:0.6});
+        io.observe(num);
+      }
+    })();
+
+    /* Scroll reveal — sections fade up as they enter */
+    (function(){
+      var els=document.querySelectorAll('.pe-reveal');
+      if(!('IntersectionObserver' in window)||peReduced){els.forEach(function(e){e.classList.add('in');});return;}
+      var obs=new IntersectionObserver(function(entries){
+        entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');obs.unobserve(en.target);}});
+      },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+      els.forEach(function(e){obs.observe(e);});
+    })();
+  </script>
+</body>
+</html>
