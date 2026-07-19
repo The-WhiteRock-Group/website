@@ -10,7 +10,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mission | The WhiteRock Group</title>
-  <meta name="description" content="The WhiteRock Group is redefining revenue operations — giving founders, operators, and investors the systems, data, and AI-enabled clarity to build lasting enterprise value.">
+  <meta name="description" content="The WhiteRock Group is redefining revenue operations — giving founders, operators, and investors the systems and clarity to build lasting enterprise value.">
   <meta name="author" content="The WhiteRock Group">
   <link rel="canonical" href="https://thewhiterockgroup.co/mission/">
   <meta property="og:title" content="Mission | The WhiteRock Group">
@@ -18,6 +18,7 @@
   <meta property="og:url" content="https://thewhiterockgroup.co/mission/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://thewhiterockgroup.co/assets/wrg-hero-poster.jpg">
+  <meta property="og:image:alt" content="WR.G — The WhiteRock Group, Revenue Value Creation">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Mission | The WhiteRock Group">
   <meta name="twitter:description" content="Redefining revenue operations — systems, data, and AI-enabled clarity for founders, operators, and investors.">
@@ -56,9 +57,11 @@
       font-family:'Source Code Pro',ui-monospace,monospace;font-weight:600;font-size:1rem;letter-spacing:0.03em;text-transform:uppercase;
       color:inherit;text-decoration:underline;text-underline-offset:3px;flex:none;
     }
+    .wr-announce-text--short{display:none;font-family:'Source Code Pro',ui-monospace,monospace;font-weight:500;font-size:0.875rem;line-height:1.3;letter-spacing:0.03em;text-transform:uppercase;margin:0;}
     @media(max-width:768px){
-      .wr-announce{gap:10px;}
-      .wr-announce-text{white-space:normal;font-size:1rem;}
+      .wr-announce{gap:10px;height:auto;min-height:52px;padding-top:10px;padding-bottom:10px;}
+      .wr-announce-text{display:none;}
+        .wr-announce-text--short{display:block;white-space:normal;overflow:visible;text-overflow:clip;}
       .wr-announce-label{display:none;}
     }
 
@@ -216,6 +219,7 @@
   <div class="wr-announce">
     <span class="wr-announce-label">Announcement</span>
     <p class="wr-announce-text">Partner spotlight: Renew Home announces major flexible-energy framework with Sunrun and Tesla.</p>
+      <p class="wr-announce-text wr-announce-text--short">Renew Home partners with Sunrun and Tesla.</p>
     <a href="/insights/renew-home-flexible-energy-framework/" class="wr-announce-link">Learn More</a>
   </div>
 
@@ -337,7 +341,7 @@
         <div class="sx-joinbox">
           <p class="vx-label">Join Our Mission</p>
           <p class="sx-join-p">Check out our open roles and let's build a more intelligent future, together.</p>
-          <a class="sx-btn" role="link" aria-disabled="true">View Job Openings
+          <a class="sx-btn" href="https://www.linkedin.com/company/thewhiterockgroup/" target="_blank" rel="noopener">View Job Openings
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
           </a>
         </div>

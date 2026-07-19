@@ -3,56 +3,84 @@
 
   <url>
     <loc>https://thewhiterockgroup.co/</loc>
-    <lastmod>2026-05-10</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://thewhiterockgroup.co/about/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://thewhiterockgroup.co/contact/</loc>
-    <lastmod>2026-05-24</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <url>
     <loc>https://thewhiterockgroup.co/insights/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://thewhiterockgroup.co/insights/revenue-value-creation-framework/</loc>
-    <lastmod>2026-07-16</lastmod>
+    <loc>https://thewhiterockgroup.co/mission/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thewhiterockgroup.co/contact/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://thewhiterockgroup.co/insights/a-letter-from-our-founder/</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://thewhiterockgroup.co/services/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://thewhiterockgroup.co/insights/5x-ceo-assessment/</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://thewhiterockgroup.co/portfolio/hubspot/</loc>
-    <lastmod>2026-05-24</lastmod>
+    <loc>https://thewhiterockgroup.co/insights/gtm-engineer-belongs-in-revops/</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://thewhiterockgroup.co/faq/</loc>
-    <lastmod>2026-05-12</lastmod>
+    <loc>https://thewhiterockgroup.co/insights/how-personal-injury-attorneys-use-ai/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thewhiterockgroup.co/insights/keepit-50m-growth-funding/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thewhiterockgroup.co/insights/renew-home-flexible-energy-framework/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thewhiterockgroup.co/insights/second-circle-partnership/</loc>
+    <lastmod>2026-07-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://thewhiterockgroup.co/insights/what-15-years-of-hiring-taught-me/</loc>
+    <lastmod>2026-07-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
